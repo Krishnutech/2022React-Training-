@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile</title>
+     <!-- stylesheets -->
+     <link rel="stylesheet" href="../styles/style.css">
+     <link rel="stylesheet" href="../styles/myprofile.css">
+     <style>
+         button{
+            background-color: coral;
+    color: #F4EEFF;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #A6B1E1;
+    border-radius: 10%;
+    cursor: pointer;
+         }
+     </style>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+        <div class="nav-left">📸 Poto collectors</div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+         <a href="about.html">About Us</a>
+         <a href="videos.html">Videos</a>
+         <a href="gallery.html">Gallery</a>
+         <a href="myprofile.html">My profile</a>
+        </div>
+    </nav> <!-- Name
+        dob
+        gender
+        address 
+        email
+        mobile
+        resume
+        city(combo)
+        Interests(textarea)
+        username
+        password
+        submit -->
+        <br><br><br><br><br>
+        <section>
+    
+    <form action="" method="get">
+        <h2>My Profile</h2>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="">
+    <br>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" name="dob" id="">
+    <br>
+    <label for="gender">Gender</label>
+    <div><span>male</span> <input type="radio" name="male" id=""></div>
+    <div><span>female</span>  <input type="radio" name="female" id=""></div>
+     <br>
+    <label for="address">address</label>
+    <textarea name="address" id="" cols="20" rows="5" placeholder="Enter your address..."></textarea>
+    <br>
+
+    <label for="">Email</label><input type="email" name="email" id="">
+    <br>
+
+    <label for="">Mobile</label><input type="tel" name="" id="">
+    <br>
+
+    <label for="resume">Upload Resume</label><input type="file" name="" id="" placeholder="Upload resume">
+    <br>
+
+    <label for="city">City</label>
+    <select name="" id="">
+        <option value="">Coimbatore</option>
+        <option value="">Chennai</option>
+        <option value="">Dindigul</option>
+    </select>
+    <br>
+
+    <label for="">Interests</label>
+    <textarea name="" id="" cols="20" rows="5"></textarea>
+    <br>
+
+    <label for="">username</label>
+    <input type="text" name="" id=""/>
+    <br>
+
+    <label for="">password</label>
+    <input type="password">
+    <br>
+    <button type="submit">Submit</button>
+</form>
+        </section>
+    
+    </body>
+
+</body>
+</html>
