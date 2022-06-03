@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myprofile.css">
+</head>
+<body>
+    <div class="myprofile-page">
+        <div class="heading">
+            <p>Myprofile</p>
+        </div>
+        <form>
+            <div>
+                <label for="name">Name</label> <br>
+                <input type="text" id="name" name="name" class="names" placeholder="Enter your name" required> <br>
+            </div>
+            <br>
+            <div>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" required><br>
+            </div>
+            <br>
+            <div>
+                <p>Please select your Gender:</p>
+                <input type="radio" id="male" name="form" value="male" required>
+                  <label for="male">Male</label><br>
+                  <input type="radio" id="female" name="form" value="female" required>
+                  <label for="female">Female</label><br>
+            </div>
+            <br>
+            <div>
+                <p>Enter Your Address</p>
+            <textarea name="comment" placeholder="Enter text here..." required></textarea><br>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" class="mail" placeholder="Enter your Email" required><br>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <br>
+            <div>
+                <label for="resume">Upload your Resume:</label>
+                <input type="resume" id="resume" name="resume" required>
+            </div>
+            <br>
+            <div>
+                <p>Select your current city</p>
+                <input list="city" id="dropdown" name="role" placeholder="Select current city" required>
+                <datalist id="city">
+                     <option value="Salem"></option>
+                     <option value="chennai"></option>
+                     <option value="Bangalore"></option>
+                     <option value="Madurai"></option>
+                     <option value="Pune"></option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <p>Your interest</p>
+                <input list="features" id="dropdown" name="features" placeholder="Select an option" required>
+                <datalist id="features">
+                      <option value="music"></option>
+                      <option value="chess"></option>
+                      <option value="cooking"></option>
+                      <option value="eating"></option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password"><br>
+            </div>
+            <br>
+            <div>
+                <label for="User Name">user name:</label>
+                <input type="text" id="User Name" name="User Name"><br>
+            </div>
+            <br>
+            <div>
+                <input class="button" type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
