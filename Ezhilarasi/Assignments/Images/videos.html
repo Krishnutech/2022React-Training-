@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         .animated-background{
+            background: linear-gradient(to right,#e783da,#fcb045,#e79696,#5ae690);
+            background-size: 400% 400%;
+            animation: animate-background 1s infinite ease-in-out;
+        }
+        .nav_list{
+            list-style: none;
+            display: flex;
+            column-gap: 200px;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav_link{
+            display: inline-block;
+            text-decoration: none;
+            color: #0a06e7;
+            position: relative;
+        }
+        .nav_link::after{
+            content: '';
+            position: absolute;
+            left: 0;bottom:0;
+            width: 100%;height: 2px;
+            background-color: #1375e6;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .5s;
+        }
+        .nav_link:hover::after{
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    </style>
+    <title>video</title>
+</head>
+<body div class="animated-background">
+    <header>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="Assignment3.html" class="nav_link">HOME</a></li>
+                <li class="nav_item"><a href="about.html" class="nav_link">ABOUT US</a></li>
+                <li class="nav_item"><a href="videos.html" class="nav_link">VIDEOS</a></li>
+                <li class="nav_item"><a href="gallery.html"class="nav_link">GALLERY</a></li>
+                <li class="nav_item"><a href="myprofile.html"class="nav_link">MY PROFILE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <center><h1 style="color:#b6eb23">Video</h1></center>
+    <Video src="C:\Users\Ezhilarasi\Documents\React-2123\2022React-Training-\Ezhilarasi\Assignments\Images\video.mp4" controls height="500"></Video>
+</div>
+</body>
+</html>
