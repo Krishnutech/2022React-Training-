@@ -107,12 +107,18 @@ a{
     width: 100vw;
     height: 100vh;
     }
+    .serv>p{
+        width: 50%;
+        text-align: center;
+    }
     .service{
+        background-image: url("https://images.pexels.com/photos/8027652/pexels-photo-8027652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: 100vw;
         overflow: scroll;
         width: 100vw;
         height: 100vh;
         /* background-color: aqua; */
-        background-image: url("https://images.pexels.com/photos/8027652/pexels-photo-8027652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
         
     }
     .st{
@@ -125,11 +131,123 @@ a{
     h4{
         color:blue ;
     }
+    
+     .g{
+        background-position: right bottom;
+    }
+    .gallery{
+        background-image: url("https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 100vw;
+    height: 100vh;
+     background-repeat: no-repeat; 
+    background-size:cover;
+    z-index: -1;
+    /* display: flex; */
 
+    }   
+.ph{
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2em;
+    top: 0%;
+    }
+    .photos{
+        width: 200px;
+        height: 200px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .list >li{
+        /* color: blue; */
+        list-style-type: circle;
+        text-shadow: 2px 2px #ff0000;
+    }
+    
 
+.list{
+    width: fit-content;
 
+}
+/* .gal 
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+} */
+.rice >li{
+    list-style-type:square;
+    text-shadow: 2px 2px blue;
+}
+.flex{
+    display: grid;
+    grid-template-columns: auto  auto auto  auto;
+}
+span {
+        color: #ff0080;
+        font-variant: small-caps;
+        font-weight: bolder;
+        font-size: 50px;
+        text-align: center;
+      }
+      .su{
+          text-align: center;
+          font-size: 50px;
+         }
+         .su::first-letter{
+             color: red;
+         }
+      .mydiv{
+           height:300px;
+            border: 15px solid transparent;
+            padding: 15px;
+            width: 30%;
+            height: 30%;
+            border-image: url(https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg) 30% stretch;
+      }
+      .mydiv2{
+        height:300px;
+        border: 15px solid transparent;
+        padding: 15px;
+        width: 30%;
+        height: 30%;
+       border-image: url(https://images.pexels.com/photos/1293006/pexels-photo-1293006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) 20% stretch;
+      }
+      .div{
+          display: flex;
+          text-align: center;
+          justify-content: center;
+      }
+      .about 
+      {
+          text-align:center;
+      }
+      .contact{
+          width: 100vw;
+          height: 100vh;
+      }
+      .rad{
+          
+        border: 2px solid;
+        padding: 10px;
+        border-radius: 50% 0 50%; 
+      }
+      .con{
+          display: flex;
+          align-items: center;
+          justify-content: left;
+      }
+      form{
+          position: relative;
+          left: 27%;
+          top: 10px;
+      }
+    img.photos{
+        border-radius: 10%;
+    }
 
-
+ */
 
 
 
