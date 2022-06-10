@@ -1,0 +1,32 @@
+.navigation{
+    background:url("./nature.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+}
+.nav-bar{
+    display: flex;
+    
+}
+.nav-bar ul{
+
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    color: beige;
+}
+.nav-bar ul li a{
+    color: azure;
+    text-decoration: none;
+}
+.second-page{
+    display: flex;
+    flex-direction: column;
+}
+.gender-name{
+    display: flex;
+}
