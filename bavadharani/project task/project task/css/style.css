@@ -1,0 +1,257 @@
+/* Reset code  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* Reset Custom */
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+body {
+	line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color : #000;
+    
+} 
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+ul,ol{
+    list-style: none;
+    padding-left: 0;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+ul{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+
+}
+ul li {
+    display:inline;
+    margin-left:20px;
+    
+
+}
+ul li a{
+    padding:10px;
+}
+/* no color change*/
+ul li a:hover{
+    
+    background-color: rgb(77, 77, 201);
+    color:white;
+}
+.first{
+    background-color: tomato;
+    padding:10px;
+    
+}
+.starting-page{
+   max-width:100%;
+   height:calc(100vh - 120px);
+   background:linear-gradient(90deg,rgba(0, 0, 0, 1),rgba(15, 15, 15,0)),url("../image/background7.jfif");
+   background-size:cover;
+   
+}
+.text{
+    height: 100%;
+    align-items: flex-end;
+}
+.content h1{
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: rgb(248, 240, 240);
+    line-height: 1.5;
+}
+ .content p{
+    margin-bottom: 50px;
+    color:rgb(255, 255, 255);
+    font-size:18px;
+    line-height: 1.5;
+}
+.page1{
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.page1 .content h2{
+    font-size: 40px;
+    margin-top: 70px;
+
+}
+.page1 .content p{
+    color:rgb(10, 10, 10);
+    margin: 20px 0px 40px;
+}
+.box{
+    max-width: 100%;
+}
+.box1{
+    width:22%;
+    height: auto;
+    background-color: rgb(46, 214, 226);
+    
+
+}
+.image-part{
+    
+    justify-content: center;
+    align-items: center;
+    width:80px;
+    height: 80px;
+    background-color: azure;
+    border-bottom-right-radius:50%;
+    display: flex;
+    margin:5px;
+}
+.box1 .content{
+    text-align: center;
+    padding:20px 10px 40px;
+}
+.box1 .content h3{
+    font-size: 25px;
+    font-weight:lighter;
+    margin-top: 20px;
+}
+.box1 .content p{
+    color:rgb(255, 255, 255);
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+}
+.inside{
+    width:50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inside-box{
+    display: flex;
+    justify-content: space-between;
+}
+.image-box{
+    width:100px;
+    height:50px;
+    margin-bottom: 5px;
+    background-color: turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside-content p{
+    font-size: 16px;
+    margin: 0px 0px;
+
+}
+.inside-content{
+    margin-left: 10px;
+    line-height: 1;
+}
+.inside-content h3{
+    font-size: 18px;
+
+}
+.main{
+    width: 100%;
+    height:100%;
+    padding:60px 0px;
+    background-color:rgba(24, 224, 231, 0.938);
+}
+.team {
+    width:50%;
+     line-height: ;
+}
+.team h2{
+    font-size: 40px;
+    line-height: 1.5;
+
+}
+.team p{
+    line-height: 1.5;
+    font-size: 16px;
+}
+footer{
+    width: 100%;
+    background-color:rgb(47, 79, 79);
+}
+.contact-details{
+    padding:40px 0px;
+
+}
+.contact-info h2{
+    line-height:2;
+    color:rgb(255, 255, 255);
+    font-weight:bolder;
+    font-size: 18px;
+
+}
+.contact-info p{
+    line-height: 1.5;
+    color: rgb(170, 166, 166);
+    font-weight:lighter;
+}
+footer .copy{
+    padding:60px;
+    background-color: rgb(17, 17, 16);
+}
+
+.side-image img{
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: white;
+    opacity:0.8;
+}
+.copy p{
+    color:rgb(253, 249, 249);
+}
+
+
+    
+
+
+
+
+
+
