@@ -1,0 +1,163 @@
+body 
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f1f3f6;
+    margin:0;
+}
+.header-section 
+{
+    background-color:#1E90FF;
+}
+.logo-nav 
+{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.logo-img 
+{
+    padding:10px 0 10px 90px;
+}
+.logo 
+{
+    width:20%;
+    height:20%;
+}
+ul 
+{
+    list-style-type: none;
+    display:flex;
+}
+li a
+{
+    text-decoration: none;
+    padding:20px;
+    font-size:1.2em;
+    color:white;
+}
+li a:hover 
+{
+    color:black;
+    /*background-color:green;*/
+}
+/*a:hover 
+{
+    background-color:green;
+}*/
+.deal-section 
+{
+    background-color: white;
+}
+.icon-img 
+{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    padding-top:20px;
+}
+.icon-img p
+{
+    font-size:1em;
+    font-weight:bold;
+}
+.icon-img p:hover 
+{
+    color:blue;
+}
+.top-offer,.grocery,.mobile,.electronics,.travel 
+{
+    width:50px;
+    height:50px;
+}
+.desc p 
+{
+    font-size:1.6em;
+}
+button
+{
+   background-color:blue;
+   color:white;
+   padding:12px;
+   border:1px solid black;
+   text-transform: uppercase;
+   margin:0 0 0 40px;
+}
+.img-div1
+{
+    margin:10px 10px 0 10px;
+    background-color:white;
+    padding:20px 0 20px 0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.image1,.image2,.image3
+{
+    width:220px;
+    height:250px;
+}
+.img-div2 
+{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin:5px 10px 0 10px;
+    padding:20px 0 20px 0;
+}
+.img-shop,.img-glass,.img-health,.img-pc
+{
+    background-color:white;
+    width:20%;
+}
+.image-shop,.image-glass,.image-health ,.image-pc
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 250px;
+}
+h5 
+{
+    padding:0 0 0 25px;
+}
+h5:hover
+{
+    text-decoration:underline;
+    color:brown;
+}
+.img-div2 p 
+{
+   
+    font-size:1.2em;
+    padding:0 0 0 20px;
+    font-weight:bold;
+}
+.footer-section 
+{
+    background-color: 	#2F4F4F;
+    margin-top:0%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+}
+.about-content ul,.help-content ul,.policy-content ul,.social-content ul
+{
+    
+    flex-direction: column ;
+}
+.about-content li,.help-content li,.policy-content li,.social-content li
+{
+    font-size:13px;
+    color:white;
+}
+.about-content p,.help-content p,.policy-content p,.social-content p
+{
+    padding:0 0 0 40px;
+}
+.about-content li:hover ,.help-content li:hover ,.policy-content li:hover ,.social-content li:hover 
+{
+    text-decoration: underline;
+}
+

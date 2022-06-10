@@ -1,0 +1,134 @@
+* 
+{
+    margin:0;
+    padding:0;
+}
+body 
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+}
+.hero-section 
+{
+    cursor:all-scroll;
+}
+.bg-img 
+{
+    background-image: url('https://images.pexels.com/photos/8616912/pexels-photo-8616912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-size: 25px;
+}
+.img1 
+{
+    width: 100vw;
+    height:80vh;
+}
+.middle 
+{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1cm;
+    font-weight: bolder;
+}
+.article-section 
+{
+    background-color: RGB(136, 176, 75);
+    cursor: alias;
+}
+.react-box 
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px 0 50px 0;
+}
+.react-desc 
+{
+    max-width: 450px;
+    margin-top:  0;
+    border: 2px solid #A0DAA9;
+    font-size: 1.4em;
+    text-align: center;
+    padding:30px 40px;
+    box-shadow: 10px 10px seagreen;
+}
+.lst-section 
+{
+    background-color: hsl(93, 23%, 36%);
+    padding-bottom: 30px;
+    cursor: cell;
+}
+.lst-desc>p 
+{
+    margin-top:0;
+    font-style: italic;
+    font-size: 1.2em;
+    text-align:center;
+    color:white;
+    padding:30px 0 0 0;
+}
+.lst-style, .otln-ovflw-section 
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.course1,.course2 
+{
+    list-style-type: circle;
+    font-size: 1.04em;
+    color: white;
+    margin-top:30px;
+}
+.course2 
+{
+    list-style-type: square;
+}
+.otln-ovflw-section 
+{
+    background-color: #3CB371;
+    cursor: zoom-in;
+}
+.otln-cnt,.ovflw-cnt 
+{
+    margin:40px 0;
+}
+.otln-desc,.ovflw-desc
+{
+    max-width:300px;
+    text-align: center;
+    font-size: 1.2em;
+    outline: 2px dashed #A0DAA9;;
+    padding:30px 40px;
+}
+.ovflw-desc 
+{
+    overflow: scroll;
+    height:100px;
+    font-weight:500;
+    outline: 1px solid #A0DAA9;
+}
+.vblty-section 
+{
+    background-color: teal;
+}
+.vblty-desc 
+{
+    margin-top:0;
+    text-align: center;
+    font-size: 0.8cm;
+    padding:50px 0;
+    font-style: italic;
+    cursor: pointer;
+}
+.vblty-desc:hover 
+{
+    visibility: hidden;
+}
