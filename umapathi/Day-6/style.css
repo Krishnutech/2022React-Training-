@@ -1,0 +1,122 @@
+section{
+    width: 100vw;
+    height: 50vh;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.one{
+    background-color: blue;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.one>div{
+    margin-top:50px;
+    margin-left: 50px;
+    height: 250px;
+    background-color: rgb(4, 3, 20);
+    color: white;
+    
+}
+/* cursor & outline */
+div.box-1{
+    cursor:alias;
+    outline-style: dashed; 
+    outline-color: blanchedalmond; 
+    max-width:min-content;
+}
+div.box-2{
+    cursor:cell;
+    outline-style: dotted;
+    outline-color: blanchedalmond;
+    max-width:max-content;
+}
+div.box-3{
+    cursor:col-resize;
+    outline-style:double;
+    outline-color: blanchedalmond;
+
+    max-width: fit-content;
+}
+div.box-4{
+    cursor:pointer;
+    outline-style:ridge;
+    outline-color: blanchedalmond;
+    max-height: fit-content;
+}
+div.box-5{
+    cursor:crosshair;
+    outline-style:solid;
+    outline-color: blanchedalmond;
+    max-height: max-content;
+}
+
+.two{
+    background-color: brown;
+}
+.three{
+    background-color: chartreuse;
+}
+.four{
+    background-color:orangered
+}
+
+.red{
+    background-color: red;
+    position: relative;
+    top: 10%;
+    left: 30%;
+    z-index: 3;
+}
+.blue{
+    background-color: blue;
+    position: relative;
+    top: -10%;
+    left: 35%;
+    z-index: 1;
+}
+.green{
+    background-color: green;
+    position: relative;
+    top: -25%;
+    left: 40%;
+    z-index: 2;
+}
+section.two{
+
+
+}
+section.two > div{
+    width: 100px;
+    height: 100px;
+   border-radius: 50%;
+    /* position: relative;
+    top: 10%;
+    left: 10%; */
+}
+
+ul{
+    padding: 50px;
+    list-style-type:decimal-leading-zero;
+    list-style-position: outside;
+}
+ol{
+    padding-left: 40px;
+    padding-top: 100px;
+    list-style-type: lower-roman;
+}
+.four{
+    padding: 50px;
+}
+.four>div{
+width:350px;
+height: 250px;
+background-color: rgb(36, 36, 36);
+overflow: scroll;
+color: aliceblue;
+}
+
+.vis{
+    visibility: hidden;
+}
