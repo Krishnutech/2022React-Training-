@@ -1,0 +1,131 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+body{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header-section, .pseudo-desc, .brdr, h3{ 
+    text-align: center;
+} 
+.header-section{ 
+    background-color:#A2B8BA;
+    text-transform: uppercase;
+    padding:30px 0 30px 0;
+    font-size:1.4em;
+    text-shadow: 2px 2px 5px red;
+    cursor:auto;
+}
+section{
+    background-image: url("https://previews.123rf.com/images/dragonstock/dragonstock1907/dragonstock190700063/128815546-school-stationery-items-on-yellow-background-back-to-school-concept-.jpg?fj=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:40px 0 40px 0;
+    cursor:grab;
+}
+.pseudo-desc{ 
+    font-size:1.4em;
+    max-width:450px;
+    font-weight:500;
+}
+p.pseudo-desc::first-letter{ 
+    color:red;
+    font-size: xx-large;
+}
+span{
+    font-style: italic;
+}
+.home-made{ 
+    width:250px;
+    height:250px;
+}
+.borderimg-roundcor{
+    background-color:powderblue;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor:ns-resize;
+}
+.brdr{
+    border: 10px solid transparent;
+    border-image: url("https://images.pexels.com/photos/50570/sandstone-the-wave-rock-nature-50570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") 30 round;
+    max-width:400px;
+    font-size:1.27em;
+    padding:10px;
+}
+.border-img> .brdr::first-line{ 
+    color:green;
+}
+.round-img{ 
+    padding:30px 0;
+    width:220px;
+    height:280px;
+    border-radius:40% 0 20%;
+}
+footer{ 
+    background-color: #EDF1FF;
+}
+h3{ 
+    font-size:1.8em;
+    padding:50px 0;
+    font-style:italic;
+}
+@media (max-width:425px)
+{
+    section {
+        display:flex;
+        flex-direction: column;
+    }
+    .pseudo-desc 
+    {
+        font-size:1.2em;
+        max-width:350px;
+    }
+    .home-made 
+    {
+        margin-top:30px;
+    }
+    .borderimg-roundcor 
+    {
+        display:flex;
+        flex-direction: column;
+    }
+    .brdr
+    {
+        max-width:350px;
+        font-size:1.22em;
+        margin-top:30px;
+    }
+}
+@media (max-width:375px)
+{
+    .pseudo-desc 
+    {
+        font-size:1em;
+        max-width:300px;
+    }
+    .home-made 
+    {
+        width:200px;
+        height:200px;
+    }
+    .brdr
+    {
+        max-width:250px;
+        font-size:1em;
+
+    }
+    .round-img{ 
+        width:200px;
+        height:260px;
+        border-radius:0 40% 20%;
+    }
+    h3{ 
+        font-size:1.5em;
+    }
+}
