@@ -68,6 +68,11 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+
+.menu-btn{
+    display: none;
+}
+
 ul>li>a{
     padding: 10px 10px;
     font-size: 14px;
@@ -93,6 +98,7 @@ ul>li>a:hover{
 }
 .content{
     height: 100%;
+    display: flex;
     align-items: flex-end;
 }
 .content>div>h1{
@@ -162,7 +168,7 @@ ul>li>a:hover{
     text-shadow: 2px 2px 4px red;
 }
 .feature_box{
-    height: 40vh;
+    height: 40%;
     padding: 0px;
 }
 .left{
@@ -213,7 +219,7 @@ ul>li>a:hover{
    padding: 0px;
    height: auto;
 }
-.team_flex>.team_text{
+.team_text{
     width: 50%;
 }
 .team_text>h1{
@@ -241,7 +247,7 @@ ul>li>a:hover{
     color: white;
 }
 .footer{
-    height: 50vh;
+    height: 50%;
     background-color: rgb(95, 95, 95);
 }
 .footer_container{
@@ -273,4 +279,61 @@ ul>li>a:hover{
     margin-left: 20px;
     width: 20px;
     height: 20px;
+}
+@media (max-width:750px) {
+    .flex{
+        flex-direction: column;
+    }  
+    .navbar{
+        flex-direction: row;
+    }
+    ul.flex{
+        display: none;
+        background-color: red;
+        transform: translateX(330px);
+        width: 300px;
+        height: 100vh;
+    }  
+
+    .content{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .box{
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    .left{
+        width: 80%;
+    }
+    .feature_box>img{
+        width: 80%;
+    }
+    .team_flex{
+     align-items: center;
+    }
+    .team_flex>img{
+        width: 80%;
+    }
+    .team_text{
+        margin-top: 20px;
+        width: 80%;
+        text-align: justify;
+    }
+    .footer_container{
+        align-items: center;
+        text-align: left;
+    }
+    .copy>p{
+       font-size: 14px;
+    }
+    .bottom{
+        flex-direction: row;
+    }
+
 }
