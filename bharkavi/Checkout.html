@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <nav class="nav1">
+            <div class="logo">
+                <img src="C:\Users\Bharkavi\Desktop\Bharkavi\htmls\2022React-Training-\bharkavi\image\1.png">
+            </div>
+            <div class="con">
+                <form>
+                    <div class="Overall">
+                    <div class="s">
+                    <input type="search" id="1" placeholder="search here">
+                    </div>
+                    <div class="q">
+                    <label for="search-box"><i class="material-icons"style="float:left" >search</i></label>
+                </div>
+            </div>
+                </form>
+            </div>
+        </nav>
+        <nav class="nav2">
+            <div class="menu">
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="categery.html" class="active">Category</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="Checkout.html">Checkout</a></li>
+            </div>
+            <div class="icon">
+                <a href="cart.html"><i class="material-icons">shopping_cart</i></a>
+                <a href="contact.html"><i class="material-icons">account_circle</i></a>
+                <a href="login.html"><i class="material-icons">login</i></a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="title">
+                <h2>Checkout Form</h2>
+            </div>
+          <div class="d-flex">
+            <form action="" method="">
+              <label>
+                <span class="fname">First Name <span class="required">*</span></span>
+                <input type="text" name="fname">
+              </label>
+              <label>
+                <span class="lname">Last Name <span class="required">*</span></span>
+                <input type="text" name="lname">
+              </label>
+              <label>
+                <span>Country <span class="required">*</span></span>
+                <select name="selection">
+                  <option value="">India</option>
+                  <option value="">USA</option>
+                  <option value="">dubai</option>
+                </select>
+              </label>
+              <label>
+                <span>Street Address <span class="required">*</span></span>
+                <input type="text" name="houseadd" placeholder="House number and street name" required>
+              </label>
+              <label>
+                <span>&nbsp;</span>
+                <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+              </label>
+              <label>
+                <span>Town / City <span class="required">*</span></span>
+                <input type="text" name="city"> 
+              </label>
+              <label>
+                <span>State / County <span class="required">*</span></span>
+                <input type="text" name="city"> 
+              </label>
+              <label>
+                <span>Postcode / ZIP <span class="required">*</span></span>
+                <input type="text" name="city"> 
+              </label>
+              <label>
+                <span>Phone <span class="required">*</span></span>
+                <input type="tel" name="city"> 
+              </label>
+              <br />
+              <br />
+              <label>
+                <span>Email Address <span class="required">*</span></span>
+                <input type="email" name="city"> 
+              </label>
+            </form>
+          </div>
+          <div class="c">
+            <h1>Payment</h1><br/>
+            <form>
+            <label>Payment Mode</label><br /><br />
+            <input type="radio"id="html" name="fav_language" value="HTML">&nbsp;Cash On Delivery<br /><br />
+            <input type="radio"id="html" name="fav_language" value="HTML">&nbsp;Online Payment<br /><br />
+        </form>
+            <label for="fname">Accepted Cards</label>
+            
+            <div class="icon-container" style="text-align:left">
+              <img src="https://www.etereshop.com/wp-content/uploads/2021/12/mastercardandvisa.jpg" alt="" style="width:300px;height:200px;">
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Name">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="cardnumber">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Month">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="Year">
+              </div>
+              <div class="d">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="code">
+              </div>
+            </div>
+            <button style="margin-left: 400px;">Continue to Checkout</button>
+          </div>
+              
+        </div>
+        </div>
+        
+    </body>
+</html>
