@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Shopping Page</title>
+    <style>
+        h2 {
+            color: brown;
+            font-family: serif;
+        }
+        
+        .b {
+            list-style-type: none;
+            padding: 0%;
+            margin: 0%;
+            float: right;
+            font-size: 23px;
+            font-family: serif;
+            font-weight: bolder;
+        }
+        
+        li {
+            float: left;
+            padding: 8px;
+        }
+        
+        li a.active {
+            color: white;
+        }
+        
+        a {
+            color: yellow;
+            text-decoration: none;
+        }
+        
+        .hr {
+            color: black;
+            border-top: 1px dotted;
+        }
+        
+        html {
+            min-height: 100%;
+            background-image: url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+        a:hover {
+            color: orange;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2px;
+            background-color: black;
+            color: white;
+        }
+        
+        form {
+            text-align: center;
+        }
+        
+        div {
+            border-radius: 5px;
+            padding: 20px;
+        }
+        
+        label {
+            color: brown;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 23px;
+            font-weight: bold;
+        }
+        
+        select {
+            padding: 2px 2px;
+            padding-right: 100px;
+        }
+        
+        .logo-img {
+            position: relative;
+            margin: 10px 15px 15px 10px;
+            width: 100px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<Body>
+    <img class="logo-img" src="https://pages.edureka.co/hubfs/edureka.png" ALT="align box" ALIGN=CENTER>
+    <br />
+    <ul class="b">
+        <li><a href="home.html ">Home</a>
+        </li>&nbsp;&nbsp;
+        <li><a href="aboutt.html ">About Us</a></li>&nbsp;&nbsp;
+        <li><a href="video.html ">Video</a></li>&nbsp;&nbsp;
+        <li><a href="gallery.html ">Gallery</a></li>&nbsp;&nbsp;
+        <li><a class="active" href="MyProfile.html ">My Profile</a>
+        </li>&nbsp;&nbsp;
+
+    </ul>
+    <br />
+    <br />
+    <br />
+    <hr class="hr">
+    <center>
+        <h1 style="color:white">My Profile</h1>
+    </center>
+
+    <div>
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br />
+            <br />
+            <label for="lname">Last Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br /><br />
+            <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" placeholder="Enter Your Email">
+            <br />
+            <br /> <label for="phone"> Mobile number</label>&nbsp;
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="MobileNumber">
+            <br />
+            <br />
+            <label for="name">UserName</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="name" name="Username" placeholder="UserName.."><br />
+            <br />
+            <label for="password">password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" placeholder="password"><br /><br />
+            <label for="city">Select City </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select id="city" name="city">
+      <option value="australia">Madurai</option>
+      <option value="canada">Chennai</option>
+      <option value="usa">Salem</option>
+    </select>
+            <br /><br />
+            <label for="resume">Resume  &nbsp; 
+                <input type="file" id="myFile" name="filename">
+                <br />
+                <br />
+                <label for="gender">Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <input type="radio">Male
+            <input type="radio">Female<br />
+            <br />
+            <label for="Dob">DOB</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date"><br />
+            <br />
+            <br />
+            <p class="formfield">
+                <label for="Address">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <textarea id="textarea" rows="5" placeholder="Address"></textarea>
+            </p>
+            <p class="formfield">
+                <label for="Interests">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interests</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <textarea id="textarea" rows="5" placeholder="Interests"></textarea>
+            </p>
+
+            <input type="submit" value="Submit" style="width: 200px;">
+        </form>
+    </div>
+    <footer>
+        <h3>@ CopyRights 2022 </h3>
+    </footer>
+</Body>
+
+</html>

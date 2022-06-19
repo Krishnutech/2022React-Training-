@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Login page</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="flex">
+            <img src="image/logo.png" class="logo" alt="fashion store logo">
+            <div class="search flex">
+                <input type="search" name="search" id="search" placeholder="Enter your product...">
+                <i class="fa-solid fa-magnifying-glass search_icon"></i>
+            </div>
+            <div class="nav_links flex">
+                <ul class="nav_list flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-bag-shopping"></i></i></a></li>
+                </ul>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </div>
+    <div class="flex login_page">
+        <div class="login">
+            <div class="image" >
+                <img src="image/user.png" alt="image">
+            </div>
+            <form action="post" autocomplete="on">
+                <div class="input">
+                  <input type="text"  required placeholder="Enter your User name">
+                  <img src="image/usericon.png" alt="username">
+                </div>
+                <div class="input">
+                  <input type="password" required placeholder="Enter your password">
+                  <img src="image/password.png" alt="password">
+                </div>
+                <div class="forget">
+                      <a href="#">Forget password</a>
+                </div>
+                <div class="submit_btn">
+                      <input type="submit" value="SignIn" >
+                 </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

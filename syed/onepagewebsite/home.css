@@ -1,0 +1,138 @@
+body 
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    margin:0;
+}
+.hero-section 
+{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:lavender;
+}
+.food-img
+{
+    width:80px;
+    height:80px;
+    padding:10px 0 10px 90px;
+}
+ul 
+{
+    display:flex;
+}
+li 
+{
+    list-style-type: none;
+}
+li>a 
+{
+    text-decoration: none;
+    padding:30px;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 500;
+}
+li>a:hover 
+{
+    color: brown;
+}
+.strs-section 
+{
+    margin:20px 40px 0 40px;
+    padding:30px 0 0 0;
+    text-align: center;
+}
+.strs-imgs 
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.strsimg1-details:hover,.strsimg2-details:hover,.strsimg3-details:hover 
+{
+    transform: scale(1.06);
+}
+.wine-img,.sandwich-img,.ice-img
+{
+    width:300px;
+    height:400px;
+}
+.wineimg-desc>p,.sandwichimg-desc>p,.iceimg-desc>p
+{
+    font-size:150%;
+    font-weight:390;
+    text-align: center;
+}
+.wineimg-desc>h5,.sandwichimg-desc>h5,.iceimg-desc>h5
+{
+    font-size:0.44cm;
+    font-weight: 400;
+    text-align: center;
+}
+.sandwichimg-desc>p 
+{
+    font-size:18pt;
+}
+.iceimg-desc>p 
+{
+    font-size:1.5pc;
+}
+.price-section 
+{
+   background-color: #FFFAFA;
+   padding: 60px 0;
+   margin:30px 0 0 0;
+}
+table 
+{
+    width: 70%;
+    height:200px;
+    margin:0 auto;
+}
+table:hover 
+{
+    transform: scale(1.1);
+} 
+table,th,td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+td 
+{
+font-weight: 450;
+}
+td:hover{
+    background-color: aqua;
+}
+.contactus-section 
+{
+    background-color:#A9A9A9;
+    text-align: center;
+    padding:30px 0 30px 0;
+}
+.contactus-section>p 
+{
+    font-size:1.4em;
+    font-style: italic;
+    font-weight:bold;
+}
+address>h4 
+{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.btn {
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width:100px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.38cm;
+  }
+  .btn:hover {
+    background-color: brown;
+  }

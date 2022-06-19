@@ -1,0 +1,40 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+    font-family:monospace;
+}
+body{
+    background-color: #DCD6F7;
+}
+nav{
+    position:fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: #424874;
+}
+div.nav-left{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 30%;
+    font-size: 1.25em;
+    color: #F4EEFF;
+
+      
+}
+div.nav-right{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-right > a{
+    text-decoration: none;
+    color: #A6B1E1;
+    font-size: 1.25em;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+

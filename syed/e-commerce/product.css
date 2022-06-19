@@ -1,0 +1,162 @@
+
+body 
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:white;
+    margin:0;
+}
+.header-section 
+{
+    background-color:#1E90FF;
+}
+.logo-nav 
+{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.logo-img 
+{
+    padding:5px 0 5px 90px;
+}
+.logo 
+{
+    width:20%;
+    height:20%;
+}
+ul 
+{
+    list-style-type: none;
+    display:flex;
+}
+li a
+{
+    text-decoration: none;
+    padding:20px;
+    font-size:1.2em;
+    color:white;
+}
+li a:hover 
+{
+    color:black;
+    /*background-color:green;*/
+}
+.product-section 
+{ 
+    
+    margin:20px 20px 0 20px;
+}
+
+.image1
+{
+    width:400px;
+    height:500px;
+
+    
+}
+.image1:hover 
+{
+    transform: scale(1.01);
+}
+
+.btn 
+{
+    margin:0 0 0 30px;
+}
+.cart-icon,.buy-icon 
+{
+    padding:10px 30px;
+    font-weight:bolder;
+    text-align: center;
+    
+}
+.cart-icon 
+{
+    color:#808080;
+    background-color:white;
+    border:1x solid black;
+    margin-right:30px;
+    margin-top:20px;
+    
+    
+}
+.buy-icon 
+{
+    color:white;
+    background-color: #808080;
+    border:none;
+}
+.cart-btn 
+{
+    width:15px;
+    height:15px;
+    
+    
+}
+.buy-btn 
+{
+    width:15px;
+    height:15px;
+}
+.section 
+{
+    display:flex;
+    justify-content:space-around;
+    
+}
+aside h4
+{
+
+    color:#A9A9A9;
+    font-size:1.2em;
+    
+}
+.watch-desc 
+{
+    font-size:1.2em;
+    line-height: 0%;
+    
+}
+ span 
+
+{
+    color:green;
+    font-size:17px;
+    font-weight:lighter;
+}
+.price 
+{
+    font-weight:bold;
+}
+.rate-info 
+{
+    color:#A9A9A9;
+    font-size:17px;
+}
+.coupn-info 
+{
+    font-size:16px;
+    font-weight:500;
+}
+.extra-off 
+{
+    font-size:15px;
+    font-weight:400;
+}
+.aval-off 
+{
+    font-size:16px;
+    font-weight:500;
+}
+.spl-price,.combo-off
+{
+   
+    font-size:15px;
+    font-weight:400;
+}
+.rname1,.rname2,.rname3,.qnperson
+{
+    font-weight: 500;
+    color:#A9A9A9;
+}
+

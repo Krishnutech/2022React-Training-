@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Shopping Page</title>
+    <style>
+        h2 {
+            color: brown;
+            font-family: serif;
+        }
+        
+        .b {
+            list-style-type: none;
+            padding: 0%;
+            margin: 0%;
+            float: right;
+            font-size: 23px;
+            font-family: serif;
+            font-weight: bolder;
+        }
+        
+        li {
+            float: left;
+            padding: 8px;
+        }
+        
+        li a.active {
+            color: red;
+        }
+        
+        form {
+            padding: 30px;
+            padding-bottom: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            max-width: 100%;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        
+        .c {
+            font-size: 23px;
+            text-align: left;
+            display: inline-block
+        }
+    </style>
+</head>
+
+<Body background="https://cdn.mwallpapers.com/photos/celebrities/colors/light-grey-wallpaper-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-nbbls.jpg">
+    <h1 style="text-align:center;color:#1589FF;font-family: Cambria;font-weight: bold;">FlipKart</h1>
+    <div class="a">
+        <ul class="b">
+            <li><a href=" day1.html ">Home</a></li>&nbsp;&nbsp;
+            <li><a class="active" href="contact.html ">Contact</a></li>&nbsp;&nbsp;
+            <li><a href="about.html ">About</a></li>&nbsp;&nbsp;
+        </ul>
+    </div><br />
+    <br />
+
+    <h1 style="text-align:center">Contact us</h1>
+    <div class="container">
+        <form class="c">
+            <label for="name">First Name</label>
+            <input type="text" name="firstname" placeholder="Your name.."><br /><br />
+            <label for="name">Last Name</label>
+            <input type="text" name="lastname" placeholder="Your last name.."><br /><br />
+
+            <label for="District">District</label>
+            <select id="District" name="District">
+                <option value="kaniyakumari">kaniyakumari</option>
+                <option value="madurai">madurai</option>
+                <option value="salem">salem</option>
+
+            </select>
+            <br />
+            <br />
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:20px"></textarea>
+            <br /><br />
+            <center><input type="submit" value="Submit"></center>
+        </form>
+
+    </div>
+</Body>
+
+
+</html>

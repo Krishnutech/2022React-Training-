@@ -1,0 +1,35 @@
+section.hero{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.right > img{
+    border-top-right-radius: 100px;
+}
+h1{
+    font-size: 4em;
+}
+h3{
+    font-size: 2em;
+    color: #F4BFBF;
+}
+p{
+    font-weight: 300;
+}
+button{
+    border: 1px solid #0000004f;
+    background-color: #FFD9C0;
+    height: 50px;
+    width: 175px;
+    cursor: pointer;
+}
+div.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 50vh;
+}

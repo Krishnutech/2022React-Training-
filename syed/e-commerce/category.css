@@ -1,0 +1,121 @@
+body 
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f1f3f6;
+    margin:0;
+}
+h5,.quality,.size 
+{
+    font-size:1em;
+}
+.header-section 
+{
+    background-color:#1E90FF;
+}
+.logo-nav 
+{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.logo-img 
+{
+    padding:5px 0 5px 90px;
+}
+.logo 
+{
+    width:20%;
+    height:20%;
+}
+ul 
+{
+    list-style-type: none;
+    display:flex;
+}
+li a
+{
+    text-decoration: none;
+    padding:20px;
+    font-size:1.2em;
+    color:white;
+}
+li a:hover 
+{
+    color:black;
+}
+.price-section 
+{ 
+    background-color: white;
+    margin:10px 20px 0 20px;
+}
+.first4,.second4
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.shoe-img1,.ftwr-img2,.watch-img3,.wallet-img4,.belt-img5
+{
+    padding:20px 0 10px 30px;
+}
+.image1,.image2,.image3,.image4,.image5,.image6,.image7,.image8 
+{
+    width: 220px;
+    height:250px;
+}
+.desc1,.desc2,.desc3,.desc4,.desc5
+{
+    padding:0 0 10px 30px;
+}
+span 
+{
+    color:green;
+}
+h5 
+{
+    color:#A9A9A9;
+}
+.price
+{
+    color:#696969;
+    font-weight:bold;
+}
+.size 
+{
+    color:#A9A9A9;
+    font-weight:bold;
+}
+.off-desc 
+{
+    color:green;
+    font-size:1em;
+    font-weight: bold;
+}
+.image8
+{
+    padding:0 0 0 20px;
+}
+footer 
+{
+    background-color: 	#2F4F4F;
+    margin-top:0%;
+    padding:30px 0 30px 0;
+}
+.btn 
+{
+    text-align: center;
+}
+button
+{
+    background-color:blue;
+    color:black;
+    padding:12px;
+    border:1px solid black;
+   font-size:1em;
+    margin:0 0 0 40px;
+    border-radius:5px;
+}
+button:hover 
+{
+    color:white;
+}

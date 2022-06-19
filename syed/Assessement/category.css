@@ -1,0 +1,121 @@
+body 
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f1f3f6;
+    margin:0;
+}
+.header-section 
+{
+    
+    box-shadow:5px 5px #1E90FF;
+    
+}
+.logo-nav 
+{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.logo-img 
+{
+    padding:10px 0 10px 90px;
+    display:flex;
+    
+}
+.logo 
+{
+    width:13%;
+    height:13%;
+
+}
+.desc 
+{
+    margin-top:28px;
+    padding-left:10px;
+ 
+    font-size: 1.5em;
+}
+.nav-list 
+{
+    gap:1rem;
+}
+ul 
+{
+    list-style-type: none;
+    display:flex;
+}
+li a
+{
+    text-decoration: none;
+    padding:20px;
+    font-size:1.2em;
+    color:black;
+    font-weight:500;
+}
+ li a:hover 
+{
+    color:brown; 
+    
+ } 
+.login 
+{
+    width:60px;
+    color:white;
+    background-color: #1E90FF;
+    border:1px solid white;
+    font-size:1.2em;
+}
+.login:hover 
+{
+    color:brown;
+}
+.shoe-type 
+{
+    background-color:lightblue;
+    margin:5px 30px 0 30px;
+}
+.shoe-images 
+
+{
+    padding-top:30px;
+    
+}
+
+.img123, .img456
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.img1, .img2, .img3, .img4, .img6
+{
+    width:400px;
+    height:250px;
+}
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover
+{
+    transform: scale(1.06);
+}
+
+.img5 
+{
+    
+    height:280px;
+}
+.shoeimg1>h4, .shoeimg2>h4, .shoeimg3>h4, .shoeimg4>h4, .shoeimg5>h4, .shoeimg6>h4
+{
+    font-size:1.2em;
+    font-weight:500;
+    display:flex;
+    justify-content: center;
+    
+}
+.shoeimg1>p, .shoeimg2>p, .shoeimg3>p, .shoeimg4>p, .shoeimg5>p, .shoeimg6>p
+{
+    color:#696969;
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+
+    
+}

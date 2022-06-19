@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us </title>
+    <style>
+        
+        p{
+            color: black;
+            font-family: serif;
+            font-size: 18px;
+        }
+        table{
+            border: none;
+        }
+        
+        h1{
+            color: blue;
+        }
+        .nav_list{
+            list-style: none;
+            display: flex;
+            column-gap: 200px;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav_link{
+            display: inline-block;
+            text-decoration: none;
+            color: #0a06e7;
+            position: relative;
+        }
+        .nav_link::after{
+            content: '';
+            position: absolute;
+            left: 0;bottom:0;
+            width: 100%;height: 2px;
+            background-color: #1375e6;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .5s;
+        }
+        .nav_link:hover::after{
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    </style>
+</head>
+<body div class="animated-background" >
+    <header>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="Assignment3.html" class="nav_link">HOME</a></li>
+                <li class="nav_item"><a href="about.html" class="nav_link">ABOUT US</a></li>
+                <li class="nav_item"><a href="videos.html" class="nav_link">VIDEOS</a></li>
+                <li class="nav_item"><a href="gallery.html"class="nav_link">GALLERY</a></li>
+                <li class="nav_item"><a href="myprofile.html"class="nav_link">MY PROFILE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <table>
+    <tr>
+    <td><img src="work.webp" alt="about us" height="500" width="500">
+    <td><h1>About US</h1><p>About Us pages are where you showcase your history, what is unique about your work, your company’s values, and who you serve.
+            The design, written content, and visual or video elements together tell an important story about who you are and why you do it.
+            How can you make the most of this integral part of your marketing strategy?
+            In this article, you’ll learn what makes an exceptional About Us page.
+            You’ll find 25 examples of the best ones out there, too, to inspire your own About Us page design and content</p>
+        <h1>The Components Of A Great About Us Page</h1><p>There isn’t a winning template to create a great About Us page. However, there are key components to make a convincing pitch with your brand story.</p>
+        <h1>Your Story (History)</h1><p>Every business has an origin story worth telling, and usually, one that justifies why you even do business and have clients.
+    Some centennial enterprises have pages of content that can fit in this section, while startups can tell the story of how the company was born, its challenges, and its vision for the future.</p>
+        <h1>Services (And Benefits)</h1><p>Of course, you have a homepage and dedicated pages for your products, but summarizing your offerings on the About Us page is crucial to tie them in with brand values in your messaging.Highlight the benefits and showcase what you do (and why it is unique).</p>
+</tr>
+    
+</body>
+</html>

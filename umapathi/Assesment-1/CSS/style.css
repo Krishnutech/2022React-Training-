@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100vw;
+    height: 100px;
+    box-shadow: 1px 1px 1px  #FFD9C0;
+
+    display: flex;
+    
+}
+.left-nav{
+    width:75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2em;
+    /* background-color: aquamarine; */
+
+}
+.right-nav{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: chartreuse; */
+}
+ul{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: blueviolet; */
+    color: black;
+}
+li{
+    list-style-type: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#signup{
+    background-color: #8CC0DE;
+    color: white;
+    width: 95px;
+    height: 35px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bag{
+    width: 50px;
+    margin-top: 15px;
+}
+.bag > div{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    left: 23px;
+    bottom: 45px;
+}

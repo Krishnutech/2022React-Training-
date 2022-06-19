@@ -1,0 +1,172 @@
+
+body 
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f1f3f6;
+    margin:0;
+}
+.header-section 
+{
+    background-color:#1E90FF;
+}
+.logo-nav 
+{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.logo-img 
+{
+    padding:5px 0 5px 90px;
+}
+.logo 
+{
+    width:20%;
+    height:20%;
+}
+ul 
+{
+    list-style-type: none;
+    display:flex;
+}
+li a
+{
+    text-decoration: none;
+    padding:20px;
+    font-size:1.2em;
+    color:white;
+}
+li a:hover 
+{
+    color:black;
+    /*background-color:green;*/
+}
+.boxes 
+{
+    display:flex;
+    justify-content:space-evenly;
+}
+.cart-section 
+{
+    margin:30px 0 0 0;
+}
+.box1 
+{
+    background-color: white;
+    width:50%;
+    padding:0 0 20px 0;
+}
+.header 
+{
+    display:flex;
+    justify-content:space-around;
+}
+.btn 
+{
+    margin-top:10px;
+}
+button 
+{
+    background-color:white;
+    color:blue;
+    padding:12px;
+    border:1px solid black;
+   font-size:0.9em;
+    margin:0 0 0 40px;
+    border-radius:5px;
+}
+.article
+{
+    display:flex;
+    justify-content: space-around;
+    
+}
+.image 
+{
+    width:100px;
+    height:200px;
+}
+.cart-line:hover 
+{
+    color:blue;
+}
+.cart-color,.cart-policy
+{
+    color:#A9A9A9;
+    font-weight:200;
+    font-size:15px;
+    line-height:0%;
+}
+.price big
+{
+    font-weight:bold;
+}
+.price span 
+{
+    color:green;
+}
+del 
+{
+    color:#A9A9A9;
+}
+.cnfm-aval 
+{
+    color:red;
+    font-size:1.5em;
+}
+.option
+{
+    display:flex;
+    font-weight: bold;
+    
+
+}
+.option:hover 
+{
+    color:blue;
+}
+.optn1 
+{
+    padding-right:30px;
+}
+
+.continue-btn
+{
+    background-color:orangered;
+    color:white;
+    padding:10px 20px;
+    margin-left:500px;
+   font-size:0.9em;
+   
+   
+}
+.box2
+{
+    background-color: white;
+    width:30%;
+    padding:0 40px 20px 40px;
+}
+.header1 
+{
+    color:#A9A9A9;
+    font-weight: bold;
+}
+.ttl-value 
+{
+    font-weight: bolder;
+}
+.price-item,.discount-item,.coupn-item,.ttl-value
+{
+    display:flex;
+    justify-content: space-between;
+}
+.discount-item span,.coupn-item span 
+{
+    color:green;
+}
+footer 
+{
+    text-align:center;
+    padding:30px 0 0 0;
+    font-style: italic;
+}

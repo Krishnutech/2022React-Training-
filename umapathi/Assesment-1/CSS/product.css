@@ -1,0 +1,75 @@
+.box> input{
+    width: 135px;
+    height: 55px;
+    text-align: center;
+}
+.box > button{
+    background-color: black;
+    color: white;
+    width: 135px;
+    height: 55px;
+    font-size: 1.05em;
+}
+.left-product{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-product>img{
+    width: 35vw;
+    border-radius: 3%;
+}
+section.product{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 35px;
+}
+div.right-product{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 45vh;
+    width: 60vw;
+}
+.right-product >span{
+    color: gray;
+}
+.right-product >p{
+    font-weight: 300;
+}
+
+section.review{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+.content >div{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 35px;
+    padding-top: 25px;
+}
+.content>div >img{
+    margin-right: 25px;
+}
+ .content>h1{
+    padding-left: 35px;
+    padding-top: 35px;
+    font-weight: 400;
+}
