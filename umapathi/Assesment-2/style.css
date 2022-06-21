@@ -1,0 +1,34 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(8, 50, 75);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: aliceblue;
+    height: 80vh;
+    width: 40vw;
+}
+
+.err::before{
+    content: "✖ ";
+}
+.err{
+    background-color: red;
+    opacity: .75;
+    color: aliceblue;
+}
+
+
