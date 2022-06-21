@@ -1,0 +1,96 @@
+<html>
+    <head>
+    <title>Profile</title>
+    <style>
+        html{
+        min-height: 100%;
+        background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .a{
+        /* text-align: center; */
+        font-size: 20px;
+        border-style: double;
+        width: 450px;
+        border-width: 5px;
+        margin:auto;
+        padding-top:30px;
+        padding-bottom: 30px;
+        padding-left: 10%; 
+     
+    }
+    </style>
+    </head>
+    <body>
+        <h1 style="text-align:center;">FORM VALIDATION</h1>
+        <form >
+            <div class="a">
+                <label for="Firstname">Firstname:</label>&nbsp;
+                <input type="text" id="1" placeholder="Firstname"><br><br>
+                <label for="Lastame">Lastname:</label>&nbsp;
+                <input type="text" id="2"  placeholder="Lastname"><br><br>
+                <label for="DOB">DOB:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" id="3"  placeholder="DOB"><br><br>
+                <label for="EMail">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="4"  placeholder="Email"><br><br>
+                <label for="Mobile No">Mobile No:</label>
+                <input type="number" id="5" placeholder="mobileno"><br><br>
+                <label for="uname" >Username:</label>
+                <input type="text" placeholder="User Name"cols="20" id="6"><br /><br />
+                <label for="password">Password:</label>&nbsp;&nbsp;
+                <input type="password"id="7" placeholder="........."><br /><br />
+                <label for="password">ConfirmPassword:</label>
+                <input type="password" id="8" placeholder="........."><br /><br /><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onclick="fun()">Submit</button>
+            </div>
+        </form>  
+        <script>
+            const fun=()=>{
+                var Fname=document.getElementById("1").value;
+                var Lname=document.getElementById("2").value;
+                var DOB=document.getElementById("3").value;
+                var email=document.getElementById("4").value;
+                var mobno=document.getElementById("5").value;
+                var uname=document.getElementById("6").value;
+                var Pass=document.getElementById("7").value;
+                var conPass=document.getElementById("8").value;
+                var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; 
+                if(Fname=="")
+                {
+                    alert("First Name is entered");
+                }
+                if(Lname=="")
+                {
+                    alert("Last Name is entered");
+                }
+                if(DOB=="")
+                {
+                    alert("Enter a valid birth date");
+                }
+                if (email == "" || !regEmail.test(email)) {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+                if(mobno=="")
+                {
+                    alert("The mobile number can have 10 digits ");
+                }
+                if(uname=="")
+                {
+                    alert("Underscore and dot can't be next to each other (e.g user_.name )");
+                }
+                if(Pass=="")
+                {
+                    alert("It should start with the uppercase alphabet");
+                }
+                if(conPass=="")
+                {
+                    alert("Please enter the password again");
+                }
+            }
+        </script> 
+    </body>
+</html>
