@@ -3,7 +3,7 @@ add validation using an arrow function called validate
 while clicking submit button. 
 Display validation error message in a div
 */
-const validate = ()=>{
+const validate = () => {
     let fname = document.myform.fname.value;
     let lname = document.myform.lname.value;
     let email = document.myform.email.value;
@@ -11,13 +11,14 @@ const validate = ()=>{
     let dob = document.myform.dob.value;
     let password = document.myform.password.value;
     let cpassword = document.myform.cpassword.value;
+
     let errDiv = document.getElementById("err");
    let fanameErr = document.getElementById("fname-err");
    let lnameErr = document.getElementById("lname-err");
    let emailErr = document.getElementById("email-err");
    let mobileErr =document.getElementById("mobile-err");
    let passwordErr = document.getElementById("password-err");
-   let cPasswordErr = document.getElementById("cpassworrd-err");
+   let cPasswordErr = document.getElementById("cpassword-err");
 
    fanameErr.style.display ="none";
     // validation part
