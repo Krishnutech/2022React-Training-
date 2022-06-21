@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks</title>
+</head>
+<style>
+    body {
+        background-color: #c9c8c3;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .c {
+        border: 2px solid black;
+        width: 50%;
+        margin-left: 300px;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    button {
+        margin-left: 620px;
+        border-radius: 25px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <h1>Mark Details</h1>
+    <div class="switch-case">
+        <form>
+            <div class="c"><label>Marks :</label><input type="text" placeholder="enter Your marks" id="3">
+            </div>
+            <br /><br />
+            <button onclick="fun()">SUBMIT</button></form>
+    </div>
+    <script>
+        function fun() {
+            let grade = document.getElementById("3").value; {
+                switch (true) {
+                    case (grade >= 550):
+                        alert("You are eligible for applying first group");
+                        break;
+                    case (grade <= 550 && grade >= 500):
+                        alert("You are eligible for applying Second group");
+                        break;
+                    case (grade <= 500 && grade >= 400):
+                        alert("You are eligible for applying Third group");
+                        break;
+                    case (grade <= 400 && grade >= 300):
+                        alert("You are eligible for applying Third group");
+                        break;
+                    default:
+                        alert("You are not eligible");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
