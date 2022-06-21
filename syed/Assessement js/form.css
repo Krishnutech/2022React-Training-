@@ -1,0 +1,30 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color:lightcyan;
+}
+h1{
+    text-align: center;
+}
+form {
+    border: 1px solid black;
+    width:30%;
+    padding:20px 0 20px 0;
+    margin-left:100px;
+    margin-top:50px;
+}
+.form-field {
+   padding:0 0  0 50px; 
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+input 
+{
+    width:100px;
+}
+#fnameError, #lnameError, #emailError, #dobError, #passwordError, #confirmPasswordError, #phoneError 
+{
+    color:violet;
+    background-color:	lightgray;
+    width:50%;
+}

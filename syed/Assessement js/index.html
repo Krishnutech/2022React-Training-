@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascrit Validation Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    
+    <form onsubmit="validate(event)">
+        <div class="form-field">
+            <label for="fname"><b>First name:</b></label>
+            <input type="text" placeholder="Enter FirstName" name="fname" id="fname" ><br>
+            <div id="fnameError"></div>
+        </div>
+        <div class="form-field">
+            <label for="lname"><b>Last name:</b></label>
+            <input type="text" placeholder="Enter LastName" name="lname" id="lname" ><br>
+            <div id="lnameError"></div>
+
+        </div>
+        <div class="form-field">
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email"><br>
+            <div id="emailError"></div>
+
+        </div>
+        <div class="form-field">
+            <label for="phone"> <b>phone number:</b></label>
+            <input type="tel" id="phone" name="phone"><br>
+            <div id="phoneError"></div>
+
+        </div>
+        <div class="form-field">
+            <label for="birthday"><b>Date of Birth:</b></label>
+            <input type="date" id="birthday" name="birthday"><br>
+            <div id="dobError"></div>
+
+        </div>
+        <div class="form-field">
+            <label for="password"><b>Password:</b></label>
+            <input type="password" name="password" id="password" ><br>
+            <div id="passwordError"></div>
+
+        </div>
+        <div class="form-field">
+            <label for="confirm-password"><b>Confirm Password:</b></label>
+            <input type="password" name="confirm-password" id="confirm-password"><br>
+            <div id="confirmPasswordError"></div>
+
+        </div>
+        <div class="form-field">
+            <input type="submit" value="submit"></input>
+        </div>
+    </form>
+    <script src="form.js"></script>
+    
+</body>
+</html>
