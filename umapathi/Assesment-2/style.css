@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 body{
@@ -20,8 +21,24 @@ form{
     background-color: aliceblue;
     height: 80vh;
     width: 40vw;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 16px 18px rgba(0, 0, 0, 0.250);
 }
-
+h2{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+label{
+    font-size: large;
+}
+button{
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: brown;
+    border: 1px solid aliceblue;
+}
 /* .err::before{
     content: "✖ ";
 }
