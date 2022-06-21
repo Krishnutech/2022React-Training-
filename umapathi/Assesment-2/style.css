@@ -22,13 +22,13 @@ form{
     width: 40vw;
 }
 
-.err::before{
+/* .err::before{
     content: "✖ ";
 }
 .err{
     background-color: red;
     opacity: .75;
     color: aliceblue;
-}
+} */
 
 
