@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Login form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="image" >
+                <img src="image/user.png" alt="image">
+            </div>
+            <form>
+                <div class="input">
+                  <input type="text" id="fname" class="inputfield"  placeholder="First name">
+                </div>
+                <div class="input">
+                    <input type="text" id="lname" class="inputfield"     placeholder="Last name">
+                  </div>
+                  <div class="input">
+                    <input type="email" id="email" class="inputfield"     placeholder="Email id">
+                  </div>
+                  <div class="input">
+                    <input type="number" id="num"  class="inputfield"   placeholder="Mobile number">
+                  </div>
+                  <div class="input">
+                    <input type="date" id="dob"  class="inputfield"    placeholder="Date of birth">
+                  </div>
+                <div class="input">
+                  <input type="password" id="password"  placeholder="password">
+                  <img src="image/password.png" id="hidden" onclick="myLock()" alt="password">
+                </div>
+                <div class="input">
+                    <input type="password" id="cpassword" placeholder="Confirm password">
+                    <img src="image/password.png" id="hidden"  onclick="myLock2()" alt="password">
+                  </div>
+                <div class="submit_btn">
+                      <button type="submit" formtarget="_blank" onclick="myFunc()">Sign in</button>
+                 </div>
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Values in input field</h1>
+        <p id="fvalue"></p>
+        <p id="lvalue"></p>
+        <p id="id"></p>
+        <p id="mobile"></p>
+        <p id="dobirth"></p>
+        <p id="psword"></p>
+        <p id="cpsword"></p>
+    </div>
+    <script>
+        function myLock(){
+            let password=document.getElementById("password");  
+            let lock=document.getElementById("hidden");
+            if(password.type==="password"){
+                password.type="text";
+            }
+            else{
+                password.type="password";
+                cpassword.type==="password"
+            }
+        }
+        function myLock2(){
+            let password=document.getElementById("cpassword");  
+            let lock=document.getElementById("hidden");
+            if(password.type==="password"){
+                password.type="text";
+            }
+            else{
+                cpassword.type==="password"
+            }
+        }
+       function myFunc(){
+        let firstname=document.getElementById("fname").value;
+        let lastname=document.getElementById("lname").value;
+        let email=document.getElementById("email").value;
+        let number=document.getElementById("num").value;
+        let date=document.getElementById("dob").value;
+        let password=document.getElementById("password").value;
+        let cpassword=document.getElementById("cpassword").value;
+        let fvalue=document.getElementById("fvalue").innerHTML=firstname;
+        let lvalue=document.getElementById("lvalue").innerHTML=lastname;
+        let id=document.getElementById("id").innerHTML=email;
+        let date1=document.getElementById("dobirth").innerHTML=date;
+        let mobile=document.getElementById("mobile").innerHTML=number;
+        let psword=document.getElementById("psword").innerHTML=password;
+        let cpsword=document.getElementById("cpsword").innerHTML=cpassword;
+        if((firstname!="")&&(lastname!="")&&(email!="")&&(isNaN(Number))&&(password!="")&&(cpassword!="")){
+            if(password==cpassword){//x(password,cpassword)
+                console.log("the two numbers are same") 
+            }  
+            else{
+                alert("The password is mismatch");
+            } 
+            
+        }
+        else{
+            alert("Please enter the input field");
+        }
+       }
+       var x=()=>password==cpassword;
+    </script>
+</body>
+</html>
