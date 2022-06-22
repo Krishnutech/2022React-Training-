@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Form Validation</title> 
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<h2>login</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Firstname</label>
+			<input type="text" placeholder="firstname" id="username" /><br>
+			<small>Error message</small>
+		</div>
+        <div class="form-control">
+			<label for="lastname">Lastname</label>
+			<input type="text" placeholder="lastname" id="lastname" /><br>
+			<small>Error message</small>
+		</div>
+
+         <div class="form-control">
+			<label for="dateofbirth">DOB</label>
+			<input type="text" placeholder="dd/mm/yy" id="dateofbirth" /><br>
+			<small>Error message</small>
+		</div>
+         
+        <div class="form-control">
+			<label for="mobile">mobile</label>
+			<input type="text" placeholder="123456789" id="mobile" /><br>
+			<small>Error message</small>
+		</div>
+          
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="@gmail.com" id="email" /><br>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Password</label>
+			<input type="password" placeholder="Password" id="password"/><br>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Confirm Password</label>
+			<input type="password" placeholder="Confirm Password" id="password2"/><br>
+			<small>Error message</small>
+		</div>
+		<button>Submit</button>
+	</form>
+</div>
+
+  <script  src="index.js"></script>
+
+</body>
+</html>
