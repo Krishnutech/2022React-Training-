@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+</head>
+<body>
+    <h1>Task 7</h1>
+    <p>Find the biggest number in the below array
+    Const numbers = [45, 10, 100, 2, 150, 6]</p>
+    <button id="submit" onclick="myFunc()">Result</button><br>
+    <p id="result" value=""></p>
+    <button ><a href="Task8.html">Task 8</a></button>
+    <script>
+          function myFunc(){
+            const numbers = [45, 10, 100, 2, 150, 6] 
+            numbers.sort(function(a, b){return a - b});
+            document.getElementById("result").innerHTML=numbers[numbers.length-1];
+          };
+    </script>
+</body>
+</html>

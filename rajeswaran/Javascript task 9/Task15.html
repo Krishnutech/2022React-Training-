@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task15</title>
+</head>
+<body>
+    <h1>Task 15</h1>
+    <p>
+        Write a javascript function and pass two values 15, 20 and return the sum of the two variables and print the result
+        </p>
+    <p>Enter first value:</p><input type="number" id="value1" value="15" ><br>
+    <p>Enter second value:</p><input type="number" id="value2" value="20" >
+    <button id="submit" onclick="myFunc()">Result</button>
+    <p id="result" value=""></p>
+    <button type="button"><a  href="Task16.html">Task 16</a></button>
+    <script>
+          function myFunc(){
+          var value1=document.getElementById("value1").value;
+          var value2=document.getElementById("value2").value;
+           document.getElementById("result").innerHTML= sum(value1,value2);
+          };
+          function sum(a,b){
+            var x=Number(a);
+            var y=Number(b);
+            return x+y;
+          };
+    </script>
+</body>
+</html>

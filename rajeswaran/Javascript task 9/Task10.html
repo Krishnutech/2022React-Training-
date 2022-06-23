@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10</title>
+</head>
+<body>
+    <h1>Task 10</h1>
+    <p>Write a javascript program to return a array with multiples of 5 of the given array values using ‘map’
+        Const b = [5, 10, 15, 25];</p>
+    <button id="submit" onclick="myFunc()">Result</button><br>
+    <p id="result" value=""></p>
+    <button ><a href="Task11.html">Task 11</a></button>
+    <script>
+          function myFunc(){
+             const b = [5, 10, 15, 25];
+             const substr=b.map(value=>{
+                return value*5;
+             })
+             document.getElementById("result").innerHTML=substr;
+          };
+    </script>
+</body>
+</html>

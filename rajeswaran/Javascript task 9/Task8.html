@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task8</title>
+</head>
+<body>
+    <h1>Task 8</h1>
+    <p>Write a javascript program to get asubstring ‘to’ from the following string ‘Welcome to our learning program’</p>
+    <button id="submit" onclick="myFunc()">Result</button><br>
+    <p id="result" value=""></p>
+    <button ><a href="Task9.html">Task 9</a></button>
+    <script>
+          function myFunc(){
+             const str="Welcome to our learning program";
+             const substr=str.substring(8);
+             document.getElementById("result").innerHTML=substr;
+          };
+    </script>
+</body>
+</html>

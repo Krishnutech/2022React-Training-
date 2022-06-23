@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12 </title>
+</head>
+<body>
+    <h1>Task 12</h1>
+    <p>
+        What is string template write down one example, list the uses
+        </p>
+    <h2>String Template</h2>
+    <p>For example :
+        <br>
+        <pre>
+            var  age=22;
+            var x=`my name is rajes .my age is ${age}`;
+        </pre>
+    </p>
+    <button id="submit" onclick="myFunc()">Result</button><br>
+    <p id="result" value=""></p>
+     <h2>Uses</h2>
+     <ul>
+        <li>It is used to interpolation of variables and expression as a string</li>
+        <li>It is used to to use multiline of the statment between the template literal also use single and double quoites</li>
+     </ul>
+    <button ><a href="Task13.html">Task 13</a></button>
+    <script>
+        function myFunc(){
+           var  age=22;
+          var x=`my name is rajes .my age is ${age}`;
+          document.getElementById("result").innerHTML=x;
+        };
+  </script>
+</body>
+</html>

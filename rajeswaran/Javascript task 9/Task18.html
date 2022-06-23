@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task18</title>
+</head>
+<body>
+    <h1>Task 18 - arrow function</h1>
+    <p>
+        Write code to display the following date string Fri Apr 20 2012 10:10:10 GMT+0530 (India Standard Time)
+        </p>
+ 
+    <button id="submit" onclick="myFunc()">Result</button>
+    <p id="result" value=""></p>
+    <button type="button"><a  href="Task19.html">Task 19</a></button>
+    <script>
+          function myFunc(){
+           var date=new Date(2012,3,20,10,10,10)
+           document.getElementById("result").innerHTML=date ;
+          };
+           
+    </script>
+</body>
+</html>

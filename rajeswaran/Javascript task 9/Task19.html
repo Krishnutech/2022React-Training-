@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+</head>
+<body>
+    <h1>Task 19</h1>
+    <p>Write a class with a constructor and one method called fullName and display the name by calling the class method</p>
+     <p id="value1"></p>
+    <button id="submit" onclick="myFunc()">Result</button><br>
+    <p id="result" value=""></p>
+    <button ><a href="Task20.html">Task 20</a></button>
+    <script>
+               class Person{
+                    constructor(firstname, lastname) {
+                            this.firstname = firstname;
+                            this.lastname = lastname;
+                    }
+                    showName(){
+                        return this.firstname+" "+this.lastname;
+                    }
+}
+          function myFunc(){
+           const name=new Person("ASRAF","ALI");
+           document.getElementById("value1").innerHTML=name.showName();
+          
+           
+          };
+    </script>
+</body>
+</html>
