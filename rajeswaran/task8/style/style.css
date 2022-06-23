@@ -6,6 +6,7 @@
 .container{
     width: 100%;
     height: 100vh;
+    overflow: scroll;
     padding-top: 80px;
     background-image: url("../image/bg.jpg");
     background-size: cover;
@@ -92,7 +93,7 @@ form a:hover{
   justify-content: center;
   margin-top: 20px;
 }
-.submit_btn button{
+.submit_btn input{
     padding: 10px 40px;
     border: none;
     font-weight: bold;
@@ -101,7 +102,7 @@ form a:hover{
     width: 70%;
 }
 
-.submit_btn button:hover{
+.submit_btn input:hover{
     background-color: red;
     color: white;
     opacity: .9;
@@ -110,4 +111,9 @@ form a:hover{
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 233, 214);
+}
+p{
+    font-size: 14px;
+    color: rgb(255, 66, 66);
+    padding-bottom: 10px;
 }

@@ -13,32 +13,39 @@
             <div class="image" >
                 <img src="image/user.png" alt="image">
             </div>
-            <form>
+            <form id="form" onsubmit="return myFunc()" >
                 <div class="input">
-                  <input type="text" id="fname" class="inputfield"  placeholder="First name">
+                  <input type="text" id="fname" onchange="return fnameFunc()" class="inputfield"  placeholder="First name">
                 </div>
+                <p id="fname_err"></p>
                 <div class="input">
-                    <input type="text" id="lname" class="inputfield"     placeholder="Last name">
+                    <input type="text" id="lname" class="inputfield" onchange="return lnameFunc()"     placeholder="Last name">
                   </div>
+                  <p id="lname_err"></p>
                   <div class="input">
-                    <input type="email" id="email" class="inputfield"     placeholder="Email id">
+                    <input type="email" id="email" class="inputfield" onchange="return emailFunc()"      placeholder="Email id">
                   </div>
+                  <p id="email_err"></p>
                   <div class="input">
-                    <input type="number" id="num"  class="inputfield"   placeholder="Mobile number">
+                    <input type="number" id="num"  class="inputfield" onchange="return mobileFunc()" size="10"  placeholder="Mobile number">
                   </div>
+                  <p id="mobile_err"></p>
                   <div class="input">
-                    <input type="date" id="dob"  class="inputfield"    placeholder="Date of birth">
+                    <input type="date" id="dob"  class="inputfield" onchange="return dateFunc()"   placeholder="Date of birth">
                   </div>
+                  <p id="date_err"></p>
                 <div class="input">
-                  <input type="password" id="password"  placeholder="password">
+                  <input type="password" id="password" onchange="return passwordFunc()"  placeholder="password">
                   <img src="image/password.png" id="hidden" onclick="myLock()" alt="password">
                 </div>
+                <p id="password_err"></p>
                 <div class="input">
-                    <input type="password" id="cpassword" placeholder="Confirm password">
+                    <input type="password" id="cpassword"onchange="return cpasswordFunc()" placeholder="Confirm password">
                     <img src="image/password.png" id="hidden"  onclick="myLock2()" alt="password">
                   </div>
+                  <p id="cpassword_err"></p>
                 <div class="submit_btn">
-                      <button type="submit" formtarget="_blank" onclick="myFunc()">Sign in</button>
+                      <input type="submit" value="Sign In">
                  </div>
             </form>
         </div>
@@ -75,35 +82,123 @@
                 cpassword.type==="password"
             }
         }
-       function myFunc(){
-        let firstname=document.getElementById("fname").value;
-        let lastname=document.getElementById("lname").value;
-        let email=document.getElementById("email").value;
-        let number=document.getElementById("num").value;
-        let date=document.getElementById("dob").value;
-        let password=document.getElementById("password").value;
-        let cpassword=document.getElementById("cpassword").value;
-        let fvalue=document.getElementById("fvalue").innerHTML=firstname;
-        let lvalue=document.getElementById("lvalue").innerHTML=lastname;
-        let id=document.getElementById("id").innerHTML=email;
-        let date1=document.getElementById("dobirth").innerHTML=date;
-        let mobile=document.getElementById("mobile").innerHTML=number;
-        let psword=document.getElementById("psword").innerHTML=password;
-        let cpsword=document.getElementById("cpsword").innerHTML=cpassword;
-        if((firstname!="")&&(lastname!="")&&(email!="")&&(isNaN(Number))&&(password!="")&&(cpassword!="")){
-            if(password==cpassword){//x(password,cpassword)
-                console.log("the two numbers are same") 
-            }  
+           var fnameFunc=()=>{
+            let firstname=document.getElementById("fname").value;
+            let fvalue=document.getElementById("fvalue").innerHTML=firstname;
+            if( (firstname == "") || (firstname.length<6) ){
+                 document.getElementById("fname_err").innerHTML="* First name is not valid please enter above 6 character";
+                 return false;
+            }
             else{
-                alert("The password is mismatch");
-            } 
-            
+                 document.getElementById("fname_err").innerHTML=" ";
+                 return true;
+               
+            }
+        }
+        var lnameFunc=()=>{
+            let lastname=document.getElementById("lname").value;
+            let lvalue=document.getElementById("lvalue").innerHTML=lastname;
+            if( lastname == "" || lastname.length<6){
+            document.getElementById("lname_err").innerHTML="* Last name is not valid please enter above 6 character";
+            return false;  
+        } 
+        else{
+                 document.getElementById("lname_err").innerHTML=" ";
+                 return true;
+               
+            }
+        }
+        var emailFunc=()=>{
+            let email=document.getElementById("email").value;
+            let id=document.getElementById("id").innerHTML=email;
+            if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))){
+                document.getElementById("email_err").innerHTML="* Email is not valid";
+            return false;  
+        } 
+        else{
+            document.getElementById("email_err").innerHTML="";
+                 return true; 
+            }
+        }
+        var mobileFunc=()=>{
+            let number=document.getElementById("num").value;
+            let mobile=document.getElementById("mobile").innerHTML=number;
+            if(number.length<10||isNaN(number)){
+                document.getElementById("mobile_err").innerHTML="* mobile number is not valid";
+            return false;  
+        } 
+        else{
+            document.getElementById("mobile_err").innerHTML="";
+                 return true; 
+            }
+        }
+        var dateFunc=()=>{
+            let date=document.getElementById("dob").value;
+            let date1=document.getElementById("dobirth").innerHTML=date;
+            if(date==""||date==null){
+                document.getElementById("date_err").innerHTML="* enter the date";
+            return false;  
+        } 
+        else{
+            document.getElementById("date_err").innerHTML="";
+                 return true; 
+            }
+        }
+        var passwordFunc=()=>{
+            let password=document.getElementById("password").value;
+            let psword=document.getElementById("psword").innerHTML=password;
+            if(password==""||password<6){
+                document.getElementById("password_err").innerHTML="* enter the valid password atleast 6 character required";
+            return false;  
+        } 
+        else{
+            document.getElementById("password_err").innerHTML="";
+                 return true; 
+            }
+        }
+        var cpasswordFunc=()=>{
+            let password=document.getElementById("password").value;
+            let psword=document.getElementById("psword").innerHTML=password;
+            let cpassword=document.getElementById("cpassword").value;
+            let cpsword=document.getElementById("cpsword").innerHTML=cpassword;
+            if(cpassword==""||cpassword<6){
+                document.getElementById("cpassword_err").innerHTML="* enter the valid password atleast 6 character required";
+            return false;  
+        } 
+        else{
+            document.getElementById("cpassword_err").innerHTML="";
+            if(password!=cpassword){
+            document.getElementById("cpassword_err").innerHTML="* password mismatch";
+            return false; 
         }
         else{
-            alert("Please enter the input field");
+            document.getElementById("cpassword_err").innerHTML="";
+                 return true; 
+            } 
+            }
+
         }
-       }
-       var x=()=>password==cpassword;
+ 
+            let form=document.getElementById("form");
+            form.addEventListener("submit", e=>{
+                e.preventDefault();
+                myValidation();
+            });
+    function myValidation(){
+        var ffunction=fnameFunc();
+        var lfunction=lnameFunc();
+        var efunction=emailFunc();
+        var mfunction=mobileFunc();
+        var dfunction= dateFunc();
+        var pfunction=passwordFunc();
+        var cpfunction=cpasswordFunc();
+         if((ffunction==true)&&(lfunction==true)&&(efunction==true)&&(mfunction==true)&&(dfunction==true)&&(pfunction==true)&&(cpfunction==true)){
+               alert("Data submited sucessfully")
+         }
+         else{
+            let psword=document.getElementById("psword").innerHTML="Please fill the form field";
+         }
+    }
     </script>
 </body>
 </html>
