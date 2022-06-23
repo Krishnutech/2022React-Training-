@@ -7,24 +7,30 @@ h1{
 }
 form {
     border: 1px solid black;
-    width:30%;
+    width:40%;
     padding:20px 0 20px 0;
-    margin-left:100px;
-    margin-top:50px;
+    margin: 50px auto 0;
+    
 }
 .form-field {
-   padding:0 0  0 50px; 
+   padding:20px 0 20px 50px;
    display:flex;
-   flex-direction: column;
+   flex-direction: row;
    justify-content: flex-start;
+  
 }
 input 
 {
     width:100px;
+    flex-basis:100px;
+   
+     margin-left:20px; 
 }
 #fnameError, #lnameError, #emailError, #dobError, #passwordError, #confirmPasswordError, #phoneError 
 {
+    display: none;
     color:violet;
     background-color:	lightgray;
-    width:50%;
+    width:40%;
+    margin:0 0 0 20px;
 }
