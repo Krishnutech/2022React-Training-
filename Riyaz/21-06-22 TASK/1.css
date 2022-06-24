@@ -37,3 +37,11 @@ body{
 button{
     background-color:rgba(10, 160, 55, 0.349);
 }
+/* .cl>input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+#lnamerror{
+color:red;
+}

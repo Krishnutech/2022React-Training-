@@ -1,0 +1,12 @@
+
+form{
+    margin-left: 530px;
+}
+button{
+    margin-left: 100px;
+    padding:10px;
+    background-color: steelblue;
+    border-color: steelblue;
+    font-weight: bolder;
+    cursor: pointer;
+}
