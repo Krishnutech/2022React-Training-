@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment!!!</title>
+    <style>
+        body {
+            background-color: #c9c8c3;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .a {
+            text-align: center;
+        }
+        
+        .overall {
+            border: 5px solid black;
+            width: 50%;
+            margin-left: 300px;
+            padding: 30px;
+        }
+        
+        button {
+            margin-left: 330px;
+            border-radius: 25px;
+            padding: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            margin-left: 620px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Validation</h1>
+    <div class="overall">
+        <form autocomplete="off">
+            <div class="a">
+                <label>First Name :</label>
+                <input id="1" type=" text " placeholder="Enter First Name "></div><br /><br />
+            <div class="b" style="margin-left: 200px;"> <label>Last Name :</label>
+                <input id="2" type=" text " placeholder="Enter Last Name "></div><br /><br />
+            <div class="c" style="margin-left: 200px;"> <label>E-Mail :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="2" type=" email " placeholder="Enter MailId"></div><br /><br />
+            <div class="d" style="margin-left: 200px;"> <label>Mobile :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="2" type=" tel " placeholder="Enter Mobile Number "></div><br /><br />
+            <div class="e" style="margin-left: 200px;"> <label>DOB :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="2" type="date"></div><br /><br />
+            <div class="f" style="margin-left: 200px;"> <label>Password:</label>&nbsp;&nbsp;&nbsp;
+                <input id="2" type=" text " placeholder="Enter Your Password "></div><br /><br />
+            <div class="g" style="margin-left: 200px;"> <label>Confirm <br>Password:</label>&nbsp;&nbsp;&nbsp;
+                <input id="2" type=" text " placeholder="Re-enter Your Password"></div><br /><br />
+            <button onclick="func() ">SUBMIT</button>
+        </form>
+    </div>
+    <script>
+        function func() {
+            let name = document.getElementById("1").value;
+            let age = document.getElementById("2").value;
+            if (age >= 18) {
+                alert("Your age is Greater than 18.....You are eligible to apply ");
+            } else {
+                alert("Your age is Less than 18.....You are not eligible to apply ");
+            }
+        }
+    </script>
+    <br />
+    <br />
+    <a href="mark.html">Mark Page</a>
+</body>
+
+</html>

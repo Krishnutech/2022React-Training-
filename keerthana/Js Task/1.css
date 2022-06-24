@@ -1,0 +1,40 @@
+* {
+    padding: 0px;
+    margin: 0px auto;
+}
+
+body {
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    font-size: 17px;
+}
+
+.if {
+    margin-left: 570px;
+}
+
+button {
+    margin-left: 50px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #4ab0ab;
+    ;
+    border: white;
+    color: black;
+}
+
+button:hover {
+    transform: scale(1.2);
+    transition: all 400ms ease-in;
+}
+
+input[type=text] {
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+}

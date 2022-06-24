@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment!!!</title>
+    <style>
+        body {
+            background-color: #c9c8c3;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .a {
+            text-align: center;
+        }
+        
+        .overall {
+            border: 2px solid black;
+            width: 50%;
+            margin-left: 300px;
+            padding: 30px;
+        }
+        
+        button {
+            margin-left: 330px;
+            border-radius: 25px;
+            padding: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            margin-left: 620px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Details</h1>
+    <div class="overall">
+        <form>
+            <div class="a">
+                <label>Student Name :</label>
+                <input id="1" type=" text " placeholder="enter Student Name "></div><br /><br />
+            <div class="b" style="margin-left: 200px;"> <label>Student Name :</label>
+                <input id="2" type=" text " placeholder="enter Age "></div><br /><br />
+            <button onclick="func() ">SUBMIT</button>
+        </form>
+    </div>
+    <script>
+        const func = () => {
+            let name = document.getElementById("1").value;
+            let age = document.getElementById("2").value;
+            if (age >= 18) {
+                alert("your name is " + name);
+            } else {
+                alert("Your age is Less than 18.....You are not eligible to apply ");
+            }
+        }
+    </script>
+    <br />
+    <br />
+    <a href="mark.html">Mark Page</a>
+</body>
+
+</html>
