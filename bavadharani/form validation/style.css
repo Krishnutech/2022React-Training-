@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(165, 184, 184);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(243, 240, 246);
+    border-radius: 5px;
+    width: 500px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: aqua;
+    border-bottom: 1px solid gray;
+    padding: 20px 40px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid gray;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.success input {
+    border-color: rgb(45, 189, 20);
+}
+
+.form-control.error input {
+    border-color: rgb(218, 44, 25);
+}
+
+.form-control.error small {
+    color: red;
+    visibility: visible;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form button {
+    background-color: blue;
+    border: 2px solid gray;
+    border-radius: 4px;
+    color: rgb(34, 163, 219);
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
