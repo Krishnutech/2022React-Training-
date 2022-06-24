@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <h1 style="text-align:center;">FORM VALIDATION</h1>
+        <div class="conatiner">
+            <form >
+                <div class="a">
+                    <div class="b">
+                     <label for="Firstname">Firstname:</label>
+                     <input type="text" required id="Firstname" placeholder="Firstname"> 
+                    </div>
+                    <div id="FirstnameError"></div>
+                    <div class="b">
+                     <label for="Lastname">Lastname:</label>
+                     <input type="text" required id="Lastname" placeholder="Lastname"> 
+                    </div>
+                    <div id="LastnameError"></div>
+                    <div class="b">
+                     <label for="DOB">DOB:</label>
+                     <input type="date" required id="DOB" placeholder="DOB">
+                    </div>
+                    <div id="DOBError"></div>
+                    <div class="b">
+                     <label for="EMail">Email:</label>
+                     <input type="text" required id="Email" placeholder="Email"> 
+                    </div>
+                    <div id="EmailError"></div>
+                    <div class="b">
+                     <label for="MobileNo">MobileNo:</label>
+                     <input type="tel" required id="MobileNo" placeholder="mobileno"> 
+                    </div>
+                    <div id="MobileNoError"></div>
+                    <div class="b">
+                     <label for="Username" >Username:</label>
+                     <input type="text" required id="Username" placeholder="User Name"> 
+                    </div>
+                    <div id="UsernameError"></div>
+                    <div class="b">
+                     <label for="password">Password:</label>
+                     <input type="password" required id="Password" placeholder="........."> 
+                    </div>
+                    <div id="passwordError"></div>
+                    <div class="b">
+                     <label for="password">ConfirmPassword:</label>
+                     <input type="password" required id="ConfirmPassword" placeholder="........."> 
+                    </div>
+                    <div id="ConfirmPasswordError"></div>
+                     <div class="b btn">
+                            <button type="submit" onclick="fun()">Submit</button>
+                     </div>
+                </div>
+            </form> 
+        </div> 
+        <script src="script.js"></script> 
+    </body>
+</html>

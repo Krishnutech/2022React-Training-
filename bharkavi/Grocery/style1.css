@@ -1,0 +1,42 @@
+ *{
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+   
+ }
+ body{
+   background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+ }
+ .container{
+     width: 120%;
+ }
+ form{
+     width: 30%;
+     margin: 20px auto 0px;
+     font-size: 20px;
+ }
+ .a{
+     width: 100%;
+     padding: 20px;
+     border-style: double;
+     border-width: 5px;
+ }
+ .b{
+     width: 100%;
+     display: flex;
+     margin-top: 20px;
+     justify-content:space-between;
+     margin-bottom: 20px;
+ }
+ input{
+     width: 50%;
+ }
+ .btn{
+     justify-content: center;
+ }
+ #FirstnameError, #LastnameError, #DOBError, #EmailError, #MobileNoError, #UsernameError, #passwordError, #ConfirmPasswordError{
+    text-align: right;
+    font-size: 15px;
+    color: red;
+    border-color: red;
+ }
