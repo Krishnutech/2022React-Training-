@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Write a javascript program to return a array with multiples of 5 of the given array values using
+        ‘map’
+        Const b = [5, 10, 15, 25]; </p>
+
+    <p id="demo"></p>
+    <script>
+        const arraymap = [5, 10, 15, 20];
+        const newarray = arraymap.map(arrayvalue);
+        document.getElementById("demo").innerHTML = "value:" + newarray;
+        function arrayvalue(num) {
+            return num * 5;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p> Write a class with a constructor and one method called fullName and display the name by
+        calling the class method</p>
+
+    <p id="demo"></p>
+    <script>
+        class Person {
+            constructor(firstname, lastname) {
+                this.firstname = firstname;
+                this.lastname = lastname;
+            }
+            display() {
+                return this.firstname + " " + this.lastname;
+            }
+        }
+        var person = new Person("bava", "dharani");
+        document.getElementById("demo").innerHTML = person.display();
+    </script>
+
+</body>
+
+</html>

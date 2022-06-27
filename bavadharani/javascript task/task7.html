@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Write a javascript program to filter the following array containing value greater than 50
+        Const s = [10, 40, 45, 60, 80, 100];</p>
+
+    <p id="demo"></p>
+    <script>
+        const numbers = [10, 40, 45, 60, 80, 100];
+        function myFunction(value, index, array) {
+            return value > 50;
+        }
+        const greatervalue = numbers.filter(myFunction);
+        document.getElementById("demo").innerHTML = greatervalue;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Find the biggest number in the below array
+        Const numbers = [45, 10, 100, 2, 150, 6];;</p>
+    <p id="demo"></p>
+    <script>
+        const points = [45, 10, 100, 2, 150, 6];
+        function maxnumber(arr) {
+            return Math.max.apply(null, arr);
+        }
+        document.getElementById("demo").innerHTML = maxnumber(points);
+    </script>
+
+</body>
+
+</html>
