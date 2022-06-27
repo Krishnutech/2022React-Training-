@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <style>
+        .animated-background{
+            background: linear-gradient(to right,#833ab4,#fcb045,#F08080,#FFC0CB);
+            background-size: 400% 400%;
+            animation: animate-background 1s infinite ease-in-out;
+        }
+        table{
+            height: 70vh;
+        }
+        .nav_list{
+            list-style: none;
+            display: flex;
+            column-gap: 200px;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav_link{
+            display: inline-block;
+            text-decoration: none;
+            color: #0a06e7;
+            position: relative;
+        }
+        .nav_link::after{
+            content: '';
+            position: absolute;
+            left: 0;bottom:0;
+            width: 100%;height: 2px;
+            background-color: #1375e6;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .5s;
+        }
+        .nav_link:hover::after{
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="C:\Users\Ezhilarasi\Documents\React-2123\2022React-Training-\Ezhilarasi\Assignments\Images\newstyle.css">
+<body div class="animated-background">
+    <header>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="Assignment3.html" class="nav_link">HOME</a></li>
+                <li class="nav_item"><a href="about.html" class="nav_link">ABOUT US</a></li>
+                <li class="nav_item"><a href="videos.html" class="nav_link">VIDEOS</a></li>
+                <li class="nav_item"><a href="gallery.html"class="nav_link">GALLERY</a></li>
+                <li class="nav_item"><a href="myprofile.html"class="nav_link">MY PROFILE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    
+    <form action="" method="post">
+        <fieldset>
+            <table border="2">
+            <legend style="color: white;"><h1>MY PROFILE</h1></legend>
+            <tr>
+            <td><label for="name" style="color: #FFC0CB;">NAME :</label>
+            <td><input type="text"placeholder="Name">
+            </td>
+            </tr>
+            <tr>
+            <td><label for="dob" style="color: #FFC0CB;">DATE OF BIRTH :</label>
+            <td><input type="date"></td>
+            </tr>
+            <tr>
+            <td><label for="gender" style="color: #FFC0CB;">GENDER :</label>
+            <td><label for="male" style="color: #FFC0CB;">MALE </label>
+            <input type="radio" name="gender">
+            <label for="female" style="color: #FFC0CB;">FEMALE </label>
+            <input type="radio" name="gender"></td></tr>
+            <tr>
+            <td><label for="address" style="color: #FFC0CB">ADDRESS :</label>
+            <td><textarea name="address" id="address" cols="" rows=""></textarea></td>
+            </tr>
+            <tr>
+            <td><label for="email" style="color: #FFC0CB">EMAIL :</label>
+            <td><input type="email" placeholder="you@email.com"></td>
+            </tr>
+            <tr>
+            <td><label for="mobile" style="color: #FFC0CB">MOBILE :</label>
+            <td><input type="text" placeholder="+91 6574838348"></td>
+            </tr>
+            <tr>
+            <td><label for="resume" style="color: #FFC0CB">RESUME :</label>
+            <td><input type="file">
+            </td>   
+        </tr>
+        <tr>
+            <td><label for="cities" style="color: #FFC0CB">CITY :</label>
+                <td><select>
+                    <option value="">Please select any City</option>
+                    <option value="city">Alexander city</option>
+                    <option value="city">Jasper</option>
+                    <option value="city">Phenix City</option>
+                    <option value="city">los Angeles</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="cities" style="color: #FFC0CB">INTERESTS :</label>
+                <td>
+                    <textarea name="interests"  cols="" rows=""></textarea>
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="username" style="color: #FFC0CB">USERNAME :</label>
+                <td>
+                    <input type="text" placeholder="Username">
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password" style="color:#FFC0CB">PASSWORD :</label>
+            </td>
+            <td><input type="password" placeholder="password"></td>
+        </tr>
+        </table>
+        </fieldset>
+
+    </form>
+    <br><br>
+    <center>
+    <button class="button">
+        <span class="text">SUBMIT</span>
+        <i class="ri-check-line icon"></i>
+    </button>
+    </center>
+    
+</body /div>
+</html>

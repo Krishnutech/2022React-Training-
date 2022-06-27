@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Form Validation</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<div class="header">
+        <h2>Registration</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">USER NAME :</label>
+			<input type="text" placeholder="Your name" id="username" />
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="dob">DATE OF BIRTH :</label>
+			<input type="date"  id="dob"/>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="address">ADDRESS :</label>
+            <textarea name="address" id="address" cols="" rows=""></textarea>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="email">EMAIL :</label>
+			<input type="email" placeholder="email@mail.com" id="email" />
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="number">NUMBER :</label>
+			<input type="text" placeholder="+91 9888788789" id="number"/>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="resume">RESUME :</label>
+        	<input type="file" id="resume">
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="city">CITY :</label>
+                <select>
+                    <option value="">Please select any City</option>
+                    <option value="city">Alexander city</option>
+                    <option value="city">Jasper</option>
+                    <option value="city">Phenix City</option>
+                    <option value="city">los Angeles</option>
+                </select>
+				<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="interests">INTERESTS :</label>
+                <textarea name="interests"  cols="" rows="" id="interests"></textarea>
+				<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="password">PASSWORD :</label>
+			<input type="password" placeholder="Password" id="password"/>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="confirm password">CONFIRM PASSWORD :</label>
+			<input type="password" placeholder="Confirm Password" id="confirm_password"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<button>Submit</button>
+	</form>
+</div>
+  <script  src="script2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!--
+File name:Assign2.html 
+Created by : Ezhilarasi K<ezhilarasi.kumaresan@nutechnologyinc.com>
+Created Date : 3-6-2022
+Modified by : Ezhilarsi K<ezhilarasi.kumaresan@nutechnologyinc.com>
+Last Modified Date : 3-6-2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            background-image: url("home.png");
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: 68%;   
+        }
+        .nav_list{
+            list-style: none;
+            display: flex;
+            column-gap: 200px;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav_link{
+            display: inline-block;
+            text-decoration: none;
+            color: #0a06e7;
+            position: relative;
+        }
+        .nav_link::after{
+            content: '';
+            position: absolute;
+            left: 0;bottom:0;
+            width: 100%;height: 2px;
+            background-color: #1375e6;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .5s;
+        }
+        .nav_link:hover::after{
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .title{
+            color:#0a06e7;
+            text-transform: uppercase;
+            line-height: 40px;
+            text-align: right;
+        }
+        .title-content{
+            display:block;
+            opacity: 0;
+            animation: revealText .5s forwards;
+        }
+        .title-second{
+            animation-delay: .25s;
+        }
+        .title-third{
+            animation-delay: .25s;
+        }
+        .title-fourth{
+            animation-delay: .325;
+        }
+        @keyframes revealText {
+            from{
+                transform : translateY(20px);
+            }
+            to{
+                opacity : 1;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="Assignment3.html" class="nav_link">HOME</a></li>
+                <li class="nav_item"><a href="about.html" class="nav_link">ABOUT US</a></li>
+                <li class="nav_item"><a href="videos.html" class="nav_link">VIDEOS</a></li>
+                <li class="nav_item"><a href="gallery.html"class="nav_link">GALLERY</a></li>
+                <li class="nav_item"><a href="myprofile.html"class="nav_link">MY PROFILE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <h1 style="color:#8df309;">Hi,There!</h1>
+    <h2 style="color:#0a06e7;"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome!!!</i></h2>
+   <h1 class="title">
+   <span class="title-content"> " Shoot &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+   <span class="title-content title-second"> Your shot.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+   <span class="title-content title-third"> You will always&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+   <span class="title-content title-fourth">Miss if you don't "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+   </h1>
+</body>
+</html>
