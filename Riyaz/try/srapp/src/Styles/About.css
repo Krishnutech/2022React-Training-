@@ -1,0 +1,74 @@
+/* .ab{
+    width: 98vw;
+    position: relative;
+}
+.abo{
+    position: absolute;
+    bottom: 8px;
+    right: 16px
+} */
+.ab{
+    display: flex;
+    flex-direction: row;
+}
+.abimage{padding: 30px;
+    height: 98vh;
+    
+    }
+    .abo{
+        font-size: 2em;
+        font-style: inherit;
+        font-weight: bolder;
+        margin-top: 80px;
+        
+    }
+    .a{
+     margin-left: 50%;
+     color: rgb(241, 12, 165);
+     font-style: italic;
+     font-size: 3rem;
+    }
+    .img{
+        width: 100px;
+        margin-right: 300px;
+        
+    }
+    .ke{
+      display: flex;
+      padding: 30px;
+      margin-left: 5%;
+    }
+    .b{
+        color: rgb(241, 12, 165);
+        font-style: italic;
+        font-size: 3rem;
+    }
+  .ais{
+    font-size: 1em;
+    font-style: inherit;
+    font-weight: bolder;
+    margin-top: 110px;
+    border: 1px solid purple;
+    width: 60%;
+    padding: 10px;
+    height: 140px;
+    border-width: 10px;
+    border-radius: 20px 40px;
+  }
+.vis{
+
+    height: 400px;
+}
+.visi{
+    font-size: 1em;
+    font-style: inherit;
+    font-weight: bolder;
+    margin-top: 110px;
+    border: 1px solid purple;
+    width: 30%;
+    padding: 10px;
+    height: 150px;
+    border-width: 10px;
+    border-radius:20px 0px 40px 0px;
+    margin-left:10%;
+}
