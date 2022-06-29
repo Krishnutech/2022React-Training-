@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.form1{
+    border: 1px solid black;
+    width:40%;
+    margin-left: 400px;
+    background-color:rgb(200, 252, 252);
+    text-align: center;
+    border-radius: 20px;
+}
+.form2{
+    padding: 8px;
+    margin-left: 60px;
+ 
+}
+input[type=email],input[type=text],input[type=number],textarea{
+width: 60%;
+padding: 10px;
+border-radius: 20px;
+}
+button{
+    margin-left: 20px;
+    border-radius: 12%;
+    padding: 10px;
+    background: #0563b4;
+
+}
