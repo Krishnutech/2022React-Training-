@@ -1,0 +1,48 @@
+       body {
+           margin: 0px;
+           padding: 0px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           font-size: 16px;
+       }
+       
+       img {
+           width: 1350px;
+           height: 600px;
+       }
+       
+       .row {
+           padding: 5px;
+       }
+       
+       .column {
+           float: left;
+           width: 31.20%;
+           padding: 8px;
+           height: 300px;
+           margin-left: 9px;
+           margin-top: 530px;
+           box-shadow: 0px 0px 10px;
+       }
+       
+       .column:hover {
+           transform: scale(0.9);
+           transition: all 300ms ease-in;
+       }
+       
+       .row:after {
+           content: "";
+           display: table;
+           clear: both;
+       }
+       
+       p {
+           text-align: center;
+           font-weight: 200;
+           font-size: 17px;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       }
+       
+       h2 {
+           color: #21a2ec;
+           text-align: center;
+       }
