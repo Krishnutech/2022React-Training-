@@ -1,0 +1,15 @@
+.text-footer {
+    
+    padding: 20px 20px;
+    align-items: center;
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(0, 0, 0);
+
+}
+  .text-footer h3{
+    text-align: center;
+    color: white;
+    
+  }
+  

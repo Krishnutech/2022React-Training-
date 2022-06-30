@@ -1,0 +1,59 @@
+
+.team{
+    padding:20px;
+    margin:20px;
+}
+.avatar {
+display: flex;
+margin-left:200px
+}
+.avatar img{
+    width:40%;
+}
+  .about1 p{
+    border: 1px solid black;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    margin-left: 200px;
+    font-size: 20px;
+    background-color: rgb(236, 214, 156);
+    font-weight: bolder;
+
+}
+.about2 p{
+    border: 1px solid black;
+    width:50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    margin-left: 200px;
+    font-size: 20px;
+    background-color:rgb(235, 235, 225);
+    font-weight: bolder;
+ 
+}
+.about3{
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 300px 0px 0px;
+
+}
+.about1 img{
+    height:150px;
+    width:30%;
+    margin-left: 50px;
+}
+.about2 {
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 300px 0px 0px;
+
+}
+.about2 img{
+    height:150px;
+}
+.ab{
+    background-color:antiquewhite;
+}
