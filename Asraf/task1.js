@@ -52,14 +52,29 @@ document.getElementById("sort1").innerHTML = fruits;
 
 fruits.sort();
 document.getElementById("sort2").innerHTML = fruits;
+
+const numbers=[45, 10, 150, 2, 100, 6];
+for(let i=0;i<numbers.length;i++)
+{
+    for(let j=0;j<numbers.length;j++)
+    {   if(numbers[i]<numbers[j])
+        {
+            let temp=numbers[i];
+            numbers[i]=numbers[j];
+            numbers[j]=temp;
+        }
+
+    }
+} 
+document.getElementById("num").innerHTML = numbers[numbers.length-1]
   
 let val="welcome to our learning program"
 let res=text.includes("to")
 if(res==true){
-    val="'to' is not present in the string";
+    val="to is  present in the string";
 }
 else
-sub="'to' is not present in the string";
+sub="to is not present in the string";
 document.getElementById("value").innerHTML=val;
 
 const s=[10, 40, 45, 60, 80, 100];
@@ -72,9 +87,9 @@ for(let i=0;i<s.length;i++)
 document.getElementById("arr").innerHTML=Arr;
 
 const cd = [5, 10, 15, 25];
-const newArr = cd.map(da);
+const newArr = cd.map(as);
 document.getElementById("af").innerHTML ="The value of C is: "+ newArr;
-function da(num) {
+function as(num) {
    return num * 5;
 }
 

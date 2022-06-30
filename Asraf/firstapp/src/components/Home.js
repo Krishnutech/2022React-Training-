@@ -1,7 +1,19 @@
+import React from "react"
+import {Link} from "react-router-dom"
+const Home =() =>{
+ return(
 
-function Welcome(props) {
-    return (<div>
-        <h1>react  {props.language}</h1>
-    </div>)
+    <ul>
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/a">About</Link></li>
+       
+
+
+
+    </ul>
+ )
+
+
 }
-export default Welcome;
+
+export default Home
