@@ -1,6 +1,6 @@
 
 import { createStore } from 'redux'
-import{ADD,SUB} from '../Constants.js'
+import{ADD,SUB,RESET} from '../Constants.js'
 
 const initialstate = {
     count:0
@@ -11,6 +11,8 @@ switch(action.type){
         return{...state, count: state.count +1 }
         case SUB:
             return {...state, count: state.count - 1 }
+        case RESET:
+            return {...state, count: 0 }
 
         default:
             return state
