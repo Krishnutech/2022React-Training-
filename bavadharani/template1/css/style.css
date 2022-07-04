@@ -142,7 +142,7 @@ img {
 }*/
 
 .first-page {
-    background-color: rgb(47, 38, 89);
+    background-color: rgb(89, 76, 144);
     height: 100vh;
     /*display: flex;
     justify-content: space-between;*/
@@ -277,7 +277,7 @@ nav img {
 }
 
 .dropbtn {
-    background-color: rgb(47, 38, 89);
+    background-color: rgb(89, 76, 144);
     color: white;
     padding: 16px;
     font-size: 17px;

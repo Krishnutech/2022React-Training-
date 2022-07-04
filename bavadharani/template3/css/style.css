@@ -1,0 +1,176 @@
+/* Reset code  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* Reset Custom */
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+body {
+	line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color : #000;
+    
+} 
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+ul,ol{
+    list-style: none;
+    padding-left: 0;
+}
+img{
+    max-width: 100%;
+}
+/*------------------------------------container-----------------------------------*/
+
+.container{
+    max-width: 80%;
+    margin: 0px auto;
+}
+
+.first-page{
+    max-width: 100%;
+    height: 100vh;
+    background-color: rgb(132, 132, 133);
+    background-size: cover;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.image-design{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+.content-part{
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+
+}
+.content-part1{
+    margin-left: 30px;
+
+}
+.content-part1 h1{
+    margin-top: 5px;
+    font-weight: bold;
+}
+.icon-part{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.icon-part i{
+    color: red;
+    margin-left: 2px;
+    font-size: 15px;
+}
+.icon-part p{
+    margin-left: 5px;
+    font-size: 15px;
+}
+.order-list{
+    display: flex;
+    margin-top: 15px;
+
+}
+.order-list p{
+    font-size: 15px;
+    
+    color: rgb(173, 173, 173);
+}
+.order-list ul {
+    display: flex;
+}
+.order-list ul li{
+    color: rgb(159, 159, 159);
+    list-style: circle;
+    margin-left: 30px;
+    font-size: 15px;
+    
+}
+.shirt-content p{
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgb(194, 194, 194);
+}
+.content-part2{
+    margin-left: 30px;
+    border-left: 1px solid rgb(199, 199, 199);
+    padding: 10px;
+}
+.content-name{
+    color: rgb(17, 174, 9);
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.content-para{
+    display: flex;
+}
+.content-para span{
+    margin-left: 10px;
+    font-size: 17px;
+    color: red;
+    display: flex;
+    align-items: center;
+    text-decoration: line-through;
+
+}
+
+.button-name{
+    display: flex;
+    flex-direction: column;
+}
+.btn-name{
+    color: aliceblue;
+    background-color: rgb(65, 137, 219);
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+    padding: 7px 50px;
+    border: none;
+    
+}
+.btn-name1{
+    margin-top: 10px;
+    color: rgb(80, 136, 241);
+    font-size: 13px;
+    padding: 7px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(132, 132, 233);
+    border-radius: 3px;
+}
