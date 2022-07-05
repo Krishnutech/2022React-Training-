@@ -48,9 +48,10 @@ body {
     margin-left: 250px;
     margin-right: 280px; */
      margin: 5px 250px ; 
+   
     padding: 13px 0px 8px 22px;
     align-items: center;
-    
+    justify-content: center;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
@@ -72,10 +73,10 @@ img {
     /* height: 160px; */
 }
 h1{
-     margin-bottom: 7px; 
+    padding-bottom: 5px;
 }
 span{
-     margin-bottom: 7px; 
+     padding-bottom: 7px; 
      
 }
 .star {
@@ -88,7 +89,7 @@ strong{
 .content ul li {
     display: inline-flex;
     padding-right: 6px;
-        margin-bottom: 7px;
+    padding-bottom: 7px;
 }
 
 ul li::after {
@@ -143,6 +144,10 @@ del{
     border-left: 1px solid black;
     padding-left: 30px;
     margin-left:55px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
     
     
 }

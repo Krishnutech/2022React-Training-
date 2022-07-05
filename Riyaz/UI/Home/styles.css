@@ -91,14 +91,16 @@ header ul li a:hover{
     border-radius: 10px;
     border-style: none;
 } 
+.btn a{
+  color: #f9fafc;
+}
 .dropdown-content {
     display: none; 
   }
 
   header{
-    transition: all .3s;
+    transition: all,.3s;
   }
-  
   
   .dropdown-content a {
     color: black;
@@ -107,15 +109,10 @@ header ul li a:hover{
     display: block;
     left: 0px;
     width: 100px;
-  
-   
     
   }
   header ul li {
-    position: relative;
-
-    
-    
+    position: relative;  
   }
   header ul li:hover .dropdown-content {
     position: absolute;
