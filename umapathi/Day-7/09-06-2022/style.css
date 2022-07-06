@@ -4,6 +4,9 @@
     margin: 0%;
     font-family: 'Varela Round', sans-serif;;
 }
+button{
+    cursor: pointer;
+}
 body{
     /* overflow-x: hidden; */
 }
