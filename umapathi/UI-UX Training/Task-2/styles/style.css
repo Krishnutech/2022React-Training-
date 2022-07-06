@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.card-img{
+    width: 155px;
+    height: 155px;
+    border-radius:5%;
+}
+.star{
+    height: 15px;
+}
+#circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0000ff;
+    margin:3px;
+}
+.list{
+    width: 252px;
+    height: 37px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #808080;
+}
+.list-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+

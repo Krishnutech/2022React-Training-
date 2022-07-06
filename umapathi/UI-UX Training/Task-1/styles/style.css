@@ -1,0 +1,108 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background:#464660;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 65px;
+}
+nav{
+    width: 72vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+ul{
+    width: 34vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    /* background-color: rgb(170, 137, 137); */
+}
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+#nav-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+#cart-img{
+    width: 20px;
+}
+
+.buy-btn{
+    border-radius: 15px;
+    background-color: #766cf6;
+    width: 166px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+}
+#buy-btn-link{
+    text-decoration: none;
+    color: #fff;
+    width: 166px;
+    height: 42px;
+}
+select{
+    border:0px;
+    font-family: Roboto;
+}
+
+
+
+/* drop down */
+.dropbtn {
+    font-size: 12px;
+    border: none;
+    padding-bottom: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content
+  {
+    margin-top: 20px;
+    padding: 30px 20px 30px 20px ;
+    height: 260px;
+  }
+  .dropdown-content > a {
+    color: #464660;
+    width: 190px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    display: block;
+  }
+
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* .dropdown:hover .dropbtn {background-color:;} */

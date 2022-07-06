@@ -21,47 +21,47 @@ Create a page with registration form having fields
  while clicking submit button. 
  Display validation error message in a div. -->
 
-<form name="myform" onsubmit="return validate()">
+<form name="myform" action="./success.html" onsubmit="return validate()">
 <h2>Registration Form</h2>
 <!-- first name -->
 <div id="err"></div>
 <div class="content">
-    <label for="">first name</label>
+    <label for="">First name</label>
     <input type="text" name="fname" id="" placeholder="first name" >
     <div id="fname-err" class="err"></div>
 </div>
 <!-- last name -->
 <div class="content">
-    <label for="">last name</label>
+    <label for="">Last name</label>
     <input type="text" name="lname" placeholder="last name" id="">
     <div id="lname-err" class="err"></div>
 </div>
 <!-- email -->
 <div class="content">
-    <label for="">email</label>
+    <label for="">Email</label>
     <input type="email" name="email" id="" placeholder="example@gmail.com" >
     <div id="email-err" class="err"></div>
 </div>
 <!-- mobile -->
 <div class="content">
-    <label for="">mobile</label>
+    <label for="">Mobile</label>
     <input type="tel" name="mobile" id="" placeholder="1234567890" >
     <div id="mobile-err" class="err"></div>
 </div>
 <!-- dob -->
 <div class="content">
     <label for="">DOB</label>
-    <input type="date" name="dob" id="" >
+    <input type="date" name="dob" id="" required>
 </div>
 <!-- password -->
 <div class="content">
-    <label for="">password</label>
+    <label for="">Password</label>
     <input type="password" name="password" id="" >
     <div id="password-err" class="err"></div>
 </div>
 <!-- confirm password -->
 <div class="content">
-    <label for="">confirm password</label>
+    <label for="">Confirm password</label>
     <input type="password" name="cpassword" id="" >
     <div id="cpassword-err" class></div>
 </div>

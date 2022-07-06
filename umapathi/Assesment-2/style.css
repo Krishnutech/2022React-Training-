@@ -20,7 +20,7 @@ form {
     justify-content: space-around;
     background-color: aliceblue;
     height: 80vh;
-    width: 40vw;
+    width: 60vw;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 4px 16px 18px rgba(0, 0, 0, 0.250);
@@ -31,6 +31,7 @@ h2{
 }
 label{
     font-size: large;
+    flex-basis: 150px;
 }
 button{
     width: 100px;
@@ -39,13 +40,11 @@ button{
     background-color: brown;
     border: 1px solid aliceblue;
 }
-/* .err::before{
-    content: "✖ ";
+
+.content {
+    display: flex;
+    width: 100%;
 }
-.err{
-    background-color: red;
-    opacity: .75;
-    color: aliceblue;
-} */
-
-
+.err {
+    margin-left: 10px;
+}
