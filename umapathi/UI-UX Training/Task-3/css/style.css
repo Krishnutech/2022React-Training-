@@ -3,6 +3,9 @@
   padding: 0%;
   box-sizing: border-box;
 }
+.icon {
+  display: none;
+}
 input:focus {
   outline: none;
 }
@@ -428,4 +431,169 @@ address {
 }
 #footer-left {
   width: 60vw;
+}
+
+/* respoonsive */
+
+/* reference used -->
+https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/#:~:text=320px%20%E2%80%94%20480px%3A%20Mobile%20devices,%E2%80%94%201200px%3A%20Desktops%2C%20large%20screens
+https://stackoverflow.com/questions/16443380/common-css-media-queries-break-points
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ ... }
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ ... }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ ... }
+
+@media only screen and (min-width: 992px){ ... } */
+
+/* small mobiles */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+  #home {
+    width: 100vw;
+  }
+  .home-content > h1 {
+    font-size: 55px;
+  }
+  .home-content > p {
+    width: 360px;
+  }
+  .service-container,
+  .about-container,
+  .numbers {
+    flex-wrap: wrap;
+  }
+  #services > h1,
+  #about-heading,
+  #chooseus > h1,
+  .contactus-container > h1 {
+    font-size: 2em;
+  }
+  .service-card {
+    display: flex;
+
+    align-items: center;
+  }
+  .service-card > p {
+    text-align: center;
+  }
+  .info-left > button {
+    font-size: 0.8em;
+  }
+  #about-sub {
+    font-size: 1.5em;
+    width: 80%;
+  }
+  #about-heading,
+  .about-content > p {
+    width: 80%;
+  }
+  #about-heading,
+  #about-sub,
+  .about-content > p {
+    text-align: center;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .info-left > h1 {
+    text-align: center;
+  }
+  .about-container > img {
+    width: 100%;
+  }
+  .about-content {
+    align-items: center;
+  }
+  .services-container {
+    grid-template-columns: auto;
+  }
+  .numbers > div {
+    padding: 1em 0 1em 0;
+  }
+  form {
+    width: fit-content;
+  }
+  .contactus-container > h1 {
+    font-size: 2em;
+  }
+  .contactus-container > h3 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+/* mobiles */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    overflow-x: auto;
+  }
+  nav {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+  #home {
+    width: 100vw;
+  }
+  .service-container,
+  .about-container,
+  .numbers {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .service-card {
+    align-items: center;
+    text-align: center;
+  }
+  .service-card > p {
+    width: 330px;
+    text-align: center;
+  }
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .info-left {
+    margin-left: 2em;
+  }
+  .info-left > h1 {
+    text-align: center;
+  }
+  .numbers {
+    margin: 0%;
+    flex-direction: column;
+  }
+  .about-container > img {
+    width: 100vw;
+    object-fit: cover;
+  }
+  .services-container {
+    grid-template-columns: auto auto;
+  }
+  form {
+    width: fit-content;
+  }
+  .home-content > h1 {
+    max-width: none;
+    font-size: 3em;
+    text-align: center;
+  }
+  .about-content {
+    align-items: center;
+    text-align: center;
+  }
+  #about-heading {
+    font-size: 45px;
+  }
 }
