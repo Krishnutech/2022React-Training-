@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Nuosu+SIL&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">-->
+    <style>
+        *{
+            margin-top:  0;
+            padding: 0;
+        }
+        body{
+            background:linear-gradient(to right,rgb(145, 12, 145),rgb(151, 194, 66));
+        }
+        body>div>h1{
+            font-size: 70px;
+            font-family:'Times New Roman';
+            font-weight: bold;
+            text-align: center;
+            padding: 30px;
+        }
+       .bg{
+           width: 100%;
+           height: 150px;
+           background-image: url(https://cdni.iconscout.com/illustration/premium/thumb/taxation-form-5037919-4198494.png),url(https://images.pexels.com/photos/7130474/pexels-photo-7130474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+           background-repeat: no-repeat;
+           background-size: 200px ,100%;
+       }
+       #i1{
+           color:#ec6f84 ;
+       }
+
+        table{
+            height: 70vh;
+            padding: 6px;
+            border: 5px solid transparent;
+            border-image: url(https://images.pexels.com/photos/7130497/pexels-photo-7130497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) 30% ;
+        }
+    
+        .button{
+            border: 5px solid transparent;
+            border-image: url(https://images.pexels.com/photos/7130497/pexels-photo-7130497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) 30%;
+            color:#0c0b0b;
+            background-color:#FFC0CB;
+        }
+        
+    </style>
+</head>
+<link rel="stylesheet" href="C:\Users\Ezhilarasi\Documents\React-2123\2022React-Training-\Ezhilarasi\Assignments\Images\newstyle.css">
+<body>
+    <div class="bg">
+        <h1><span id="i1">App</span>lication</h1>
+    </div>
+    <form  style="padding:20px;" id="form" class="form">
+        <fieldset style="padding:20px;">
+            <table border="2" >
+            <legend style="color: white; font-size: 20px;"><h1><span id="i1">MY</span> PROFILE</h1> </legend>
+            <div class="form-control">
+            <tr>
+            <td><label for="name" style="color: #FFC0CB;">NAME :</label>
+            <td><input type="text"placeholder="Name" id="name">
+                <script>
+                    const uname = document.getElementById('name');
+                        if (uname === '') {
+                            document.getElementById("name").innerHTML= "Please Enter Your name";
+                            } 
+                            else{document.getElementById("name").innerHTML="go away"}
+            </script>
+            </td>
+            </tr>
+            </div>
+            <div class="form-control">
+            <tr>
+            <td><label for="dob" style="color: #FFC0CB;">DATE OF BIRTH :</label>
+            <td><input type="date" id="dob"><small>Error message</small></td>
+            </tr></div>
+            <div class="form-control"></div>
+            <tr>
+            <td><label for="gender" style="color: #FFC0CB;">GENDER :</label>
+            <td><label for="male" style="color: #FFC0CB;">MALE </label>
+            <input type="radio" name="gender" id="gender">
+            <label for="female" style="color: #FFC0CB;">FEMALE </label>
+            <input type="radio" name="gender" id="gender">
+            <small>Error message</small>
+            </td></tr></div>
+            <tr>
+            <div class="form-control">
+            <td><label for="address" style="color: #FFC0CB">ADDRESS :</label>
+            <td><textarea name="address" id="address" cols="" rows=""></textarea><small>Error message</small></td>
+            </tr></div>
+            <div class="form-control"></div>
+            <tr>
+            <td><label for="email" style="color: #FFC0CB">EMAIL :</label>
+            <td><input type="email" placeholder="you@email.com" id="email"><small>Error message</small></td>
+            </tr></div>
+            <div class="form-control"></div>
+            <tr>
+            <td><label for="mobile" style="color: #FFC0CB">MOBILE :</label>
+            <td><input type="text" placeholder="+91 6574838348" id="number"><small>Error message</small></td>
+            </tr></div>
+            <div class="form-control"></div>
+            <tr>
+            <td><label for="resume" style="color: #FFC0CB">RESUME :</label>
+            <td><input type="file" id="resume"><small>Error message</small>
+            </td>   
+        </tr></div>
+        <div class="form-control">
+        <tr>
+            <td><label for="cities" style="color: #FFC0CB" id="city">CITY :</label>
+                <td><select>
+                    <option value="">Please select any City</option>
+                    <option value="city">Alexander city</option>
+                    <option value="city">Jasper</option>
+                    <option value="city">Phenix City</option>
+                    <option value="city">los Angeles</option>
+                </select><small>Error message</small>
+            </td>
+        </tr></div>
+        <div class="form-control">
+        <tr>
+            <td><label for="cities" style="color: #FFC0CB">INTERESTS :</label>
+                <td>
+                    <textarea name="interests"  cols="" rows="" id="interests"></textarea><small>Error message</small>
+                </td>
+            </td>
+        </tr></div>
+        <div class="form-control">
+        <tr>
+            <td>
+                <label for="password" style="color:#FFC0CB">PASSWORD :</label>
+            </td>
+            <td><input type="password" placeholder="password" id="password"><small>Error message</small></td>
+        </tr></div>
+        <br>
+        <div class="form-control">
+        <tr>
+            <td>
+                <label for="confirm password" style="color:#FFC0CB">CONFIRM PASSWORD :</label>
+            </td>
+            <td><input type="password" placeholder="confirm password" id="confirm password"><small>Error message</small></td>
+        </tr></div>
+        <br>
+    </table>
+    <br>
+        <button class="button">SUBMIT</button>
+        </fieldset>
+    </form>
+    <script src="script2.js"></script>
+</body>
+</html>
