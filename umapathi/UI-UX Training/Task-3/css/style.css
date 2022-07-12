@@ -3,6 +3,10 @@
   padding: 0%;
   box-sizing: border-box;
 }
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
 .icon {
   display: none;
 }
@@ -40,7 +44,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-x: hidden;
 }
+
 a:hover {
   color: #ef4137;
 }
@@ -62,8 +68,9 @@ nav > a {
 
 #home {
   background: no-repeat;
+  overflow-x: hidden;
   background-image: url('../assets/images/hero-image.jpg');
-  background-size: cover;
+  background-size: auto;
   /* width: 100vw; */
   background-color: rgba(0, 0, 0);
   /* height: 130vh; */
@@ -307,6 +314,9 @@ nav > a {
   grid-template-columns: auto auto auto auto;
   padding: 75px;
 }
+.icon {
+  cursor: pointer;
+}
 
 form {
   width: 650px;
@@ -432,9 +442,7 @@ address {
 #footer-left {
   width: 60vw;
 }
-
 /* respoonsive */
-
 /* reference used -->
 https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/#:~:text=320px%20%E2%80%94%20480px%3A%20Mobile%20devices,%E2%80%94%201200px%3A%20Desktops%2C%20large%20screens
 https://stackoverflow.com/questions/16443380/common-css-media-queries-break-points
@@ -453,6 +461,22 @@ https://stackoverflow.com/questions/16443380/common-css-media-queries-break-poin
     overflow-x: hidden;
   }
   nav {
+    display: none;
+  }
+
+  .responsive_menu {
+    width: 80vw;
+    height: 70vh;
+    position: absolute;
+    top: 110%;
+    background-color: #2b2948;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+  }
+  .menu {
     display: none;
   }
   .icon {
@@ -525,13 +549,13 @@ https://stackoverflow.com/questions/16443380/common-css-media-queries-break-poin
   }
   .contactus-container > h1 {
     font-size: 2em;
+    text-align: center;
   }
   .contactus-container > h3 {
     font-size: 1.5em;
     text-align: center;
   }
 }
-
 /* mobiles */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   body {
@@ -540,6 +564,22 @@ https://stackoverflow.com/questions/16443380/common-css-media-queries-break-poin
   nav {
     display: none;
   }
+  .responsive_menu {
+    width: 60vw;
+    position: absolute;
+    top: 110%;
+    height: 70vh;
+    background-color: #2b2948;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+  }
+  .menu {
+    display: none;
+  }
+
   .icon {
     display: block;
   }
@@ -582,6 +622,7 @@ https://stackoverflow.com/questions/16443380/common-css-media-queries-break-poin
     grid-template-columns: auto auto;
   }
   form {
+    justify-content: space-around;
     width: fit-content;
   }
   .home-content > h1 {
@@ -593,7 +634,170 @@ https://stackoverflow.com/questions/16443380/common-css-media-queries-break-poin
     align-items: center;
     text-align: center;
   }
+  .about-content > p {
+    width: 80%;
+  }
   #about-heading {
-    font-size: 45px;
+    font-size: 2.5em;
+    width: 80%;
+  }
+  #about-sub {
+    font-size: 1.8em;
+    width: 80%;
+  }
+  #chooseus > h1 {
+    font-size: 2.5em;
+  }
+  .contactus-container > h3 {
+    font-size: 1.8em;
+    width: 80%;
+  }
+  .contactus-container > h3,
+  .contactus-container > h1 {
+    text-align: center;
+  }
+  .contactus-container > h1 {
+    font-size: 2.5em;
+  }
+  .contactus-btn-box {
+    width: 50%;
+  }
+}
+/* tab and small laptops */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #home {
+    width: 100vw;
+  }
+  .service-container,
+  .about-container,
+  .numbers {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .service-card {
+    align-items: center;
+    text-align: center;
+  }
+  .service-card > p {
+    width: 330px;
+    text-align: center;
+  }
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .info-left {
+    margin-left: 2em;
+  }
+  .info-left > h1 {
+    text-align: center;
+  }
+  .numbers {
+    margin: 0%;
+    flex-direction: column;
+  }
+  .about-container > img {
+    width: 100vw;
+    object-fit: cover;
+  }
+  .services-container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .about-content {
+    align-items: center;
+    text-align: center;
+  }
+  .about-content > p {
+    width: 70%;
+  }
+  #about-heading {
+    font-size: 2.8em;
+    width: 80%;
+  }
+  #about-sub {
+    font-size: 1.8em;
+    width: 80%;
+  }
+  #chooseus > h1 {
+    font-size: 2.8em;
+  }
+  .contactus-container > h3 {
+    font-size: 2em;
+    width: 80%;
+  }
+  .contactus-container > h3,
+  .contactus-container > h1 {
+    text-align: center;
+  }
+  .contactus-container > h1 {
+    font-size: 2.8em;
+  }
+  .contactus-btn-box {
+    width: 50%;
+  }
+}
+/* tab and small laptops */
+@media only screen and (min-width: 992px) and (max-width: 1104px) {
+  #home {
+    width: 100vw;
+  }
+  .service-container,
+  .about-container,
+  .numbers {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .service-card {
+    align-items: center;
+    text-align: center;
+  }
+  .service-card > p {
+    width: 330px;
+    text-align: center;
+  }
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .info-left {
+    margin-left: 2em;
+  }
+  .info-left > h1 {
+    text-align: center;
+  }
+  .numbers {
+    margin: 0%;
+    flex-direction: column;
+  }
+  .about-container > img {
+    width: 100vw;
+    object-fit: cover;
+  }
+  .about-content {
+    align-items: center;
+    text-align: center;
+  }
+  .about-content > p {
+    width: 70%;
+  }
+  #about-heading {
+    font-size: 2.8em;
+    width: 80%;
+  }
+  #about-sub {
+    font-size: 1.8em;
+    width: 80%;
+  }
+  .contactus-container > h3 {
+    font-size: 2em;
+    width: 80%;
+  }
+  .contactus-container > h3,
+  .contactus-container > h1 {
+    text-align: center;
+  }
+  .contactus-btn-box {
+    width: 50%;
   }
 }
