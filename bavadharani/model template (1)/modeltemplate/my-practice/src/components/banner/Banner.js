@@ -16,7 +16,8 @@ function Banner() {
                         text of the printing typesetting industry. 
                         Lorem Ipsum has been the industry text of the printing   dummy text ever since
                         text of the printing and  text of  the 1500s, printer took a galley of type and when an unknown
-                        crambled it to make a type specimen book. It has survived not only text of the. </p>
+                        crambled it to make a type specimen book. It has survived not only text of the. 
+                        It has survived not only text of the</p>
                     
                     </div>
                 </div>

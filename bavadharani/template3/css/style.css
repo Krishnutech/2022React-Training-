@@ -66,12 +66,12 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .image-design{
     width: 150px;
     height: 150px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 .content-part{
     background-color: rgb(255, 255, 255);
@@ -82,10 +82,9 @@ img{
 }
 .content-part1{
     margin-left: 30px;
-
 }
-.content-part1 h1{
-    margin-top: 5px;
+.content-part1 h2{
+    margin-top: 13px;
     font-weight: bold;
 }
 .icon-part{
@@ -94,7 +93,7 @@ img{
     margin-top: 10px;
 }
 .icon-part i{
-    color: red;
+    color: rgb(255, 0, 0);
     margin-left: 2px;
     font-size: 15px;
 }
@@ -104,33 +103,51 @@ img{
 }
 .order-list{
     display: flex;
-    margin-top: 15px;
+    margin-top: 10px;
 
 }
 .order-list p{
     font-size: 15px;
-    
+    display: flex;
+    align-items: center;
     color: rgb(173, 173, 173);
 }
+
+.order-list ul {
+    list-style: none;
+    display: flex;
+  }
+  
+ .order-list ul li::before {
+    content: "\2022";
+    color: rgb(37, 110, 213);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
 .order-list ul {
     display: flex;
 }
+
 .order-list ul li{
-    color: rgb(159, 159, 159);
-    list-style: circle;
+    color: rgb(166, 166, 168);
     margin-left: 30px;
     font-size: 15px;
-    
 }
+
 .shirt-content p{
     margin-top: 15px;
     font-size: 12px;
     color: rgb(194, 194, 194);
+    max-width: 300px;
 }
 .content-part2{
     margin-left: 30px;
     border-left: 1px solid rgb(199, 199, 199);
     padding: 10px;
+    
 }
 .content-name{
     color: rgb(17, 174, 9);
@@ -144,11 +161,10 @@ img{
 .content-para span{
     margin-left: 10px;
     font-size: 17px;
-    color: red;
+    color: rgb(255, 0, 0);
     display: flex;
     align-items: center;
     text-decoration: line-through;
-
 }
 
 .button-name{
@@ -156,7 +172,7 @@ img{
     flex-direction: column;
 }
 .btn-name{
-    color: aliceblue;
+    color: rgb(242, 248, 254);
     background-color: rgb(65, 137, 219);
     margin-top: 20px;
     border-radius: 5px;
