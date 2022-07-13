@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body {
+    font-family: 'PT Sans', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.overall {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/Home-header.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: rgba(7, 7, 7, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top-section {
+    width: 82%;
+    font-family: 'PT Sans', sans-serif;
+    padding: 10px 20px;
+    max-width: 82%;
+    margin: auto;
+}
+
+.inner-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    padding-top: 20px;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: #C0C0C0;
+}
+
+a.active {
+    color: #FF0000;
+}
+
+.conetent h1 {
+    text-align: center;
+    font-size: 70px;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+.conetent span {
+    display: block;
+}
+
+.conetent p {
+    text-align: center;
+    max-width: 600px;
+    font-size: 20px;
+    font-family: 'PT Sans', Helvetica, Arial, Lucida, sans-serif;
+    word-spacing: 2px;
+    color: #ffffff;
+    margin: 50px auto 0;
+}
+
+.btn-1 {
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.btn {
+    background-color: #ef4137;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px 40px;
+    font-size: 20px;
+    box-shadow: 0px 2px 18px 0px black;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #FF0000;
+}
+
+.content2 {
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    padding-top: 20px;
+}
+
+.section-container {
+    padding: 20px 40px;
+}
+
+.section-container h4 {
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #ef4137;
+}
+
+.section-container h3 {
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+
+.Content2 h1 {
+    text-align: center;
+    font-size: 51px;
+    padding: 30px;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.container-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.section-container img {
+    width: 340px;
+    height: 200px;
+}
+
+.section-container p {
+    font-size: 16px;
+    font-family: 'PT Sans', Helvetica, Arial, Lucida, sans-serif;
+    line-height: 2;
+}
+
+.button {
+    padding: 30px 0px;
+}
+
+.btn-2 {
+    background-color: #ef4137;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 27px;
+    font-size: 15px;
+    box-shadow: 0px 2px 18px 0px black;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.btn-2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-2:hover {
+    background-color: #FF0000;
+}
+
+.content-container {
+    padding: 30px 0px;
+    background-image: linear-gradient(180deg, rgba(63, 61, 106, 0.9) 0%, rgba(63, 61, 106, 0.9) 100%), url(https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/Home-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inner-container h3 {
+    max-width: 160px;
+    padding-top: 10px;
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.seperate-section-content p {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.seperate-section-content h4 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.inner-container a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.inner-container .btn-3 {
+    background-color: #ef4137;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 27px;
+    font-size: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 18px 0px black;
+    text-transform: uppercase;
+}
+
+.inner-container .btn-3:hover {
+    background-color: #FF0000;
+}
+
+.story-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: auto;
+    padding: 70px 40px;
+}
+
+.inner-story-container-content {
+    padding: 0px 40px;
+    max-width: 450px
+}
+
+.inner-story-container-content h1 {
+    padding: 0px 0px 20px;
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.inner-story-container-content h4 {
+    color: #ef4137;
+    font-size: 22px;
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    padding: 0px 0px 40px;
+}
+
+.inner-story-container-content p {
+    color: #343434;
+    font-size: 20px;
+    font-family: 'PT Sans', Helvetica, Arial, Lucida, sans-serif;
+    padding: 0px 0px 40px;
+    line-height: 1.5;
+}
+
+.inner-story-container-content .btn-4 {
+    background-color: #ef4137;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px 27px;
+    font-size: 19px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 18px 0px black;
+    text-transform: uppercase;
+}
+
+.inner-story-container-content .btn-4:hover {
+    background-color: #FF0000;
+}
+
+.about-content-container {
+    background-image: linear-gradient(180deg, rgba(249, 249, 249, 0.95) 0%, rgba(249, 249, 249, 0.95) 100%), url(https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/webdesign-concept.jpg);
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.about-content-container h2 {
+    font-size: 50px;
+    color: #000;
+    text-align: center;
+    padding: 50px 0px 30px;
+    font-family: 'PT Sans', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.about-inner-content {
+    padding: 10px 0px;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.about-inner-content p {
+    width: 270px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'PT Sans', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fa {
+    padding: 0px 120px;
+    font-size: 32px;
+    color: #ef4137;
+}
+
+.last-section {
+    padding: 30px 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: linear-gradient(135deg, rgba(63, 61, 106, 0.95) 0%, rgba(63, 61, 106, 0.95) 100%), url(https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/team-big.jpg)
+}
+
+.last-section-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.last-section-content h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 30px 0px;
+    text-align: center;
+}
+
+.last-section-content h3 {
+    color: #ef4137;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px 50px;
+    text-align: center;
+}
+
+.form-section {
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.message-form {
+    padding-left: 60px;
+}
+
+.form input[type=text] {
+    width: 40%;
+}
+
+.message-form input[type=text] {
+    width: 95%;
+}
+
+input[type=text] {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    padding: 30px;
+}
+
+ ::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.button-container {
+    padding: 50px 0px;
+}
+
+.captcha-text {
+    display: flex;
+    padding: 50px 0px;
+}
+
+.captcha-text>input {
+    padding: 10px;
+}
+
+.captcha-inner-container {
+    padding-top: 60px;
+}
+
+.btn-5 {
+    background-color: #ef4137;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 27px;
+    font-size: 15px;
+    box-shadow: 0px 2px 18px 0px black;
+    border-radius: 8px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.btn-5 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-5:hover {
+    background-color: #FF0000;
+}
+
+.contact-button {
+    padding-left: 560px
+    display: flex;
+}
+
+label {
+    color: #ffffff;
+}
+
+.footer {
+    padding-bottom: 30px 0px;
+    background-color: #3f3d6a;
+}
+
+.footer-content {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.footer-inner-content a {
+    display: block;
+    color: #ffffff;
+    padding: 8px;
+}
+
+.footer-inner-content {
+    max-width: 1240px;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer-inner-content h2 {
+    padding: 20px 0px;
+    color: #ffffff;
+    font-size: 23px;
+    font-family: 'PT Sans', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.address {
+    line-height: 1.9;
+}
+
+.overall-footer-bottom {
+    background-color: #2b2948;
+}
+
+.footer-bottom {
+    padding: 20px;
+}
+
+.footer-bottom {
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 80%;
+    margin: auto;
+}
