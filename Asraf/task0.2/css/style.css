@@ -1,0 +1,109 @@
+/* Reset code  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* Reset Custom */
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;  
+    color : #000;
+    background-color: #eeeeee;  
+} 
+.image-part img{
+    padding: 10px 10px;
+}
+.container{
+    max-width: 80%;
+    margin: 0px auto;
+}
+/* section */
+.section{
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 10px ;
+}
+.section-info li{
+    color:#a4a7ac;
+    font-size: 15px;
+}
+.section-info{
+    margin: 10px;
+    padding: 5px;
+    width:80%;
+    border-radius: 2px solid #ffffff;
+    border-right: 1px solid #000;
+    line-height: 1.5em;
+}
+.section-info ul li{
+    display:inline-block;
+}
+.section-info ul li::after{
+    content:'\2022';
+    color: #0102f3;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+.section-info ul li:last-child::after{
+    content:'\2022';
+    color:#ffffff ;
+   
+}
+.checked{
+  color: red;
+}
+.content-part{
+    padding: 20px 20px;
+}
+/* button part */
+.btn-name{
+    background-color: #007aff;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    padding: 10px 50px;
+}
+.btn-name1{
+    background-color: #ffffff;
+    border: 1px solid #007aff;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    padding: 10px 27px;
+    color: #007aff;
+}
+s{
+    color: #f80504;
+}
+h4{
+    color: #789a6c;
+    padding:15px 0 ;
+    font-size: 15px;
+}
