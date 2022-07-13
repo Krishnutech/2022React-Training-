@@ -1,0 +1,718 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+/* .ham {
+    display:none;
+}   */
+.helping-info1-desc, .helping-info2-desc, .helping-info3-desc, .aside-heading, .aside-para, .main-footer, .footer-bottom, .form-section{
+    font-family: 'PT Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+.logo-nav, .section1-details, .section1-para, .button1 {
+    font-family: 'PT Sans', sans-serif;
+}
+.helping-section h1, .helping-info1-heading, .helping-info2-heading, .helping-info3-heading, .helping-info1-title, .helping-info2-title, .helping-info3-title, .company-type>h3, .exp-type, .exp-type h4, .aside-desc, .reasoning-section-heading, .decision-desc, .details-heading, .details-quote {
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+}
+blockquote, .section1-para, .section1-btn, .helping-section h1, .num, .exp-type h4, .reasoning-section-heading, .decision-desc, .details-heading, .details-quote{
+    text-align:center;
+}
+.btn1, .helping-info1-btn , .helping-info2-btn, .helping-info3-btn, .ad-section-btn, .service-btn, .last-btn{
+    color: #ffffff;
+    background-color: #ef4137;
+    border:1px solid #ef4137;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.section1 {
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%),url("https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/Home-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit:cover;
+    display: flex;
+    flex-direction: column;
+}
+.logo-nav {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px;
+    position: fixed;
+    top:0;
+    width:100vw;
+    background-color: rgba(7,7,7,0.7);
+}
+.top-nav {
+    padding: 30px;
+}  
+.top-nav > a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.top-nav >.active {
+    color: red;
+}
+.section1-details {
+   color: #ffffff;
+}
+blockquote {
+    max-width: 345px;
+    margin:90px auto 0;
+    padding-top:80px;
+    font-size:70px; 
+}
+.section1-para {
+    max-width:500px;
+    font-size:20px;
+    margin:30px auto 0;
+    line-height: 1.5em;
+}
+.btn1 {
+    font-weight:900;
+    padding:15px 25px;
+    border-radius: 3px;
+    margin:40px 0 120px 0;
+}
+/*--------helping-section--------*/
+.helping-section h1 {
+    font-size:47px;
+    font-weight:500;
+    padding:70px 0 60px 0;
+}
+.helping-ways {
+     display:flex; 
+     justify-content: center;     
+     align-items: center;   
+     margin:auto;
+}
+.helping-info1 
+{
+    padding-left: 30px;
+}
+.img2, .img3, .img4 {
+    width:325px;
+    object-fit: cover;
+}
+.helping-info1-heading, .helping-info1-title, .helping-info2-heading, .helping-info2-title, .helping-info3-heading, .helping-info3-title { 
+    text-transform: uppercase;
+}
+.helping-info1-heading, .helping-info2-heading, .helping-info3-heading {
+    font-size: 30px;
+    padding:30px 0 5px 0;
+}
+.helping-info1-title, .helping-info2-title, .helping-info3-title {
+    font-style: italic;
+    font-size: 22px;
+    color: #ef4137;
+    padding-bottom:30px;
+}
+.helping-info1-desc, .helping-info2-desc, .helping-info3-desc {
+    max-width:360px;
+    line-height: 1.7em;
+    font-size:16px;
+}
+.helping-info1-btn , .helping-info2-btn, .helping-info3-btn, .ad-section-btn, .service-btn {
+    font-size: 15px;
+    font-weight: 600;
+    padding:10px 20px;
+    margin:40px 0 80px 0;
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+}
+/*---------ad-section------------*/
+.adsection-outer-layer
+{
+    background-image: linear-gradient(180deg,rgba(63,61,106,0.9) 0%,rgba(63,61,106,0.9) 100%),url(https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/Home-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ad-section {
+    object-fit:cover;
+    display: flex;
+    justify-content: space-evenly;  
+     align-items: center;
+     max-width: 75%;
+     margin: auto;
+}
+.company-type>h3 {
+    padding-top:60px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    max-width:200px;
+    font-size:39px;
+    color:#ffffff;
+}
+.ad-section-btn {
+    margin:10px 0 70px 0;
+    border-radius: 3px;
+    box-shadow: 0px 2px 18px 0pxrgba(0,0,0,0.3);
+}
+.exp-type {
+    color:#ffffff;
+    font-size:27px;
+    padding-bottom:80px;
+}
+.num {
+    font-size:3.2em;
+    font-weight:bold;
+}
+.info1 {
+    max-width:250px;
+}
+.exp-type h4 {
+    font-size:27px;
+}
+/*-------------service-section-------------*/
+.service-section {
+    padding-top:70px;
+    display:flex;
+    justify-content: space-evenly; 
+    width:100vw;
+}
+
+.aside-heading {
+    font-weight: 600;
+    font-size: 45px;
+    padding-bottom:10px;
+    color:black;
+    line-height:1em;
+    max-width:450px;
+}
+.aside-desc {
+    color: #ef4137;
+    padding:10px 0 40px 0;
+    font-size:24px;
+    /* font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif; */
+}
+.aside-para {
+    color:black;
+    line-height:1.5em;
+    font-size:1.2em;
+    font-weight:200;
+}
+.service-btn {
+   padding:15px 20px;
+   border-radius: 3px;
+   margin:30px 0 80px 0;
+}
+  /*-------reasoing-section----------*/
+.img6 {
+    cursor:context-menu;
+}
+.reasoning-outer-layer 
+{
+    background-image: linear-gradient(180deg,rgba(249,249,249,0.95) 0%,rgba(249,249,249,0.95) 100%),url(https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/webdesign-concept.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.reasoning-section {
+    justify-content: space-evenly;
+    margin: auto;
+    max-width:75%;
+}
+.reasoning-section-heading {
+   font-size: 51px;
+   padding:70px 0 40px 0;
+}
+.decision-desc {
+    max-width:200px;
+    font-size:17px;
+    font-weight:bold;
+    line-height:1.2em;
+    padding:10px 0 60px 0;
+}
+.wrap1, .wrap2 {
+    display:flex;
+    justify-content:space-evenly; 
+    align-items: center;
+    text-align: center;
+}
+/*---------details section---------*/
+.details-section {
+background-image: linear-gradient(135deg,rgba(63,61,106,0.95) 0%,rgba(63,61,106,0.95) 100%),url(https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/team-big.jpg);
+}
+::placeholder { 
+    color:#ffffff;
+ }
+.details-heading{
+    color: #ffffff;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 30px 30px 0px;
+    text-align: center;
+}
+.details-quote {
+    color:#ef4137;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px 10px 50px;
+    text-align: center;
+}
+.form-section{
+    padding-bottom:40px;
+}
+.name-lname{
+    display: flex;
+    justify-content: space-evenly;
+}
+.message-form {
+    padding-left: 280px;
+}
+.message-form input[type=text] {  
+    width: 75%;
+}
+input[type=text]{
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding: 30px;
+    background:none;
+}
+.last-btn {
+    padding:10px 20px;
+    border-radius:3px;
+} 
+.submit-button  {
+    display:flex;
+    justify-content:flex-end;
+    padding-right: 260px;
+}
+.verification {
+    display:flex;
+}
+.verification>input {
+    padding: 10px;
+}
+.verification-code {
+    padding-top: 60px;
+}
+.verification-code>label {
+    color: #ffffff;
+}
+.btn {
+    margin-top:50px;
+}
+.last-btn a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*------------main-footer----------*/
+.main-footer-layer 
+{
+    background-color: #3f3d6a;
+}
+.main-footer {
+    display:flex;
+    color:#ffffff;
+    justify-content:space-evenly;
+    max-width: 75%;
+    margin:auto;
+    align-items:center;
+    padding:90px 0 100px 0;
+    line-height:2em;
+}
+.main-footer h4 {
+    font-size:1.2em;
+    font-weight: bold;
+}
+.quick-link-cnt a, .services-cnt a, .service-area-cnt a, .contact-cnt a {
+    display:block;
+    text-decoration:none;
+    color:#ffffff;
+    line-height:1.6em;
+    font-weight: 100;
+    cursor:pointer;
+}
+.contact-cnt {
+    padding-top:30px;
+}
+.footer-outer-layer {
+    background-color: #2b2948;
+}
+.footer-bottom {
+    color:#ffffff;
+    font-size:0.9em;
+    padding:30px 0 20px 200px;
+    font-weight:bold;
+    cursor:auto;
+    max-width:95%;
+    margin:auto;
+}
+/*--------mini-lap---------*/
+@media(max-width:1024px) {
+body{
+    overflow-x: hidden;
+}  
+.section1-details {
+    margin:0 auto;
+}
+.img2, .img3, .img4 {
+    width:230px;
+}
+.helping-info1-title, .helping-info2-title, .helping-info3-title {
+    font-size: 18px;
+}
+.helping-info1-desc, .helping-info2-desc, .helping-info3-desc {
+    max-width:250px;
+    font-size:14px;
+}
+.helping-ways {
+    justify-content: space-evenly;
+    max-width:85%;
+}
+.company-type {
+    max-width:85%;
+}
+.company-type>h3 {
+       max-width:200px;
+       font-size:30px;
+}
+.exp-type {
+      font-size:20px;
+}
+.service-section-img {
+    padding-top:100px;
+}
+.image5 {
+    width:280px;
+}
+.aside-heading {
+    font-weight: 500;
+    font-size: 35px;
+    max-width:400px;
+}
+.aside-para {
+    font-size:1.1em;
+}
+.form-section {
+    padding-bottom: 50px;
+}
+.message-form {
+    padding-left: 180px;
+}
+}
+/*-------------tab--------------*/
+@media (max-width:768px){
+body {
+    overflow-x: hidden;
+}
+.responsive-ham {
+    width:60vw;
+    height:70vh;
+    position:absolute;
+    top:110%;
+    background-color: #2b2948;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px; 
+}
+.responsive-ham a {
+    color: #ffffff;
+}
+.top-nav{
+    display:none;
+}
+blockquote {
+    font-size:50px; 
+}
+.section1-para {
+    max-width:450px;
+}
+.helping-info1-heading, .helping-info2-heading, .helping-info3-heading {
+     font-size: 25px;
+     text-align: center;
+}
+.helping-info1-title, .helping-info2-title, .helping-info3-title {
+    font-size: 17px;
+    text-align: center;
+}
+.helping-info1-desc, .helping-info2-desc, .helping-info3-desc {
+    max-width:230px;
+    text-align: center;
+}
+.helping-info1-btn-layer, .helping-info2-btn-layer, .helping-info3-btn-layer{
+    display: flex;
+    justify-content: center;
+}
+.helping-section h1 {
+    font-size:40px;
+}
+.helping-ways {
+    display: flex;
+    flex-flow: wrap;
+}
+.ad-section {
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+} 
+.company-type {
+    max-width:85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.company-type>h3 {
+    max-width:170px;
+    font-size:30px;
+    text-align: center;
+}
+.ad-section-btn {
+    font-size: 12px;
+} 
+.service-section {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+.service-section-img {
+    padding-top:40px;
+}
+.image5 {
+    width:350px;
+}
+.aside-heading {
+    margin:0 auto;
+    padding-top:30px;
+    line-height: 1.2em;
+}
+.reasoning-section-heading {
+    font-size: 45px;
+}
+.wrap1, .wrap2 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.decision-desc {
+    max-width:150px; 
+    font-size:13px;
+}
+.img6 {
+    width:60px;
+}
+.details-heading {
+    font-size: 40px;
+    text-align: center;
+}
+.details-quote {
+    font-size: 20px;
+}
+.form-section {
+    max-width:100%;
+}
+.name-lname {
+    display: flex;
+    flex-direction: column;
+    width:400px ;
+    margin: auto;
+}
+.message-form {
+    padding-left: 185px;
+}
+.message-form input[type=text] {  
+    width: 69%;
+}
+.verification-line > input[type=text] {
+    width:40%;
+}
+.submit-button  {
+    padding-right: 180px;
+    padding-left: 400px;
+}
+.main-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.main-footer h4 {
+    font-size:1.3em;
+}
+.quick-link-cnt a, .services-cnt a, .service-area-cnt a, .contact-cnt a {
+   font-size: small;
+}
+.quick-link-cnt, .services-cnt {
+    padding-bottom: 30px;
+}
+.contact-cnt {
+    padding-top:25px;
+}
+.footer-bottom {
+    padding: 30px 0 20px 250px; 
+} 
+}
+/*----------Mobile-----------*/
+@media (max-width: 480px) 
+{
+.logo-img {
+    padding-top: 10px;
+}
+.img1 {
+    width:120px ;
+}
+blockquote {
+    max-width: 300px;
+    font-size:40px; 
+}
+.section1-para {
+    max-width:300px;
+    font-size:17px;
+}
+.btn1 {
+    font-weight:900;
+    padding:15px 15px;
+}
+.helping-section h1 {
+     font-size:30px;
+}
+.img2, .img3, .img4 {
+    width:260px;
+}
+.helping-info1-heading, .helping-info2-heading, .helping-info3-heading {
+    text-align: center;
+}
+.helping-info1-title, .helping-info2-title, .helping-info3-title {
+    font-size: 16px;
+    text-align: center;
+}
+.helping-info1-desc, .helping-info2-desc, .helping-info3-desc {
+    max-width:250px;
+    text-align: center;
+    font-size:14px;
+    margin: auto;
+}
+.helping-info1-btn , .helping-info2-btn, .helping-info3-btn, .ad-section-btn, .service-btn {
+    margin:20px 0 80px 0;
+}
+.ad-section {
+    display: flex;
+    flex-direction: column;
+} 
+.company-type {
+    max-width:85%; 
+    display: flex;
+    flex-direction: column;
+}
+.company-type>h3 {
+    max-width:190px;
+    font-size:32px;
+    text-align: center;
+    line-height:1.3em;
+}
+.exp-type {
+    font-size:30px;
+}
+.ad-section-btn {
+    font-size: 0.9em;
+} 
+.aside-heading {
+    font-weight: 300;
+    font-size: 28px;
+    max-width:300px;
+}
+.service-section-img {
+    padding-top:30px;
+}
+.image5 {
+    width:300px;
+}
+.aside-desc {
+    font-size:17px;
+}
+.aside-para {
+    font-size:0.78em;
+    font-weight:200;
+}
+.wrap1, .wrap2 {
+    display: flex;
+    flex-direction: column;
+}
+.decision-wrap1 p{
+    padding: 20px 0;
+} 
+.reasoning-section {
+    padding-bottom:40px;
+} 
+.reasoning-section-heading {
+    font-size: 40px;
+    padding:50px 0 40px 0;
+ }
+.decision-desc {
+    max-width:200px;
+    font-size:17px;
+    font-weight:bold;
+    line-height:1.2em;
+    padding:10px 0 60px 0; 
+}
+.details-heading{
+    font-size: 30px;
+    padding: 30px 30px 0px;
+}
+.details-quote {
+     font-size: 18px;
+}
+.form-section {
+    display:flex;
+    flex-direction: column;
+}
+.name-lname {
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+.message-form {
+    padding-left: 100px;
+}
+.submit-button  {
+    padding-right: 130px;
+    padding-left:300px;
+}
+.verification-line > input[type=text] {
+    width:20%;
+}
+.main-footer {
+    display: flex;
+    flex-direction: column;
+}
+.main-footer h4 {
+    font-size:1.4em;
+    font-weight: bold;
+}
+.quick-link-cnt, .services-cnt, .service-area-cnt {
+    padding-bottom: 30px;
+}
+.contact-cnt h4{
+    text-align: center;
+}
+.quick-link-cnt a, .services-cnt a, .service-area-cnt a, .contact-cnt a {
+    font-size:1em ;
+    text-align: center;
+    line-height: 2em;
+}
+.footer-bottom{
+    padding: 30px 0 20px 100px;
+}
+}
+
+
+
+
+
+
+
+  
+  

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eeeeee;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+   /* max-width: 1040px; */
+   margin: auto;
+   width: 1040px;
+    
+}
+.section1, .section2, .section3{
+    border:1px solid #ffffff;
+    border-radius:4px;
+    display:flex;
+    background-color: #ffffff;
+    justify-content: space-around; 
+    align-items:center; 
+    max-width: 80%;
+    margin:10px auto 0;
+}
+.img1, .img2, .img3 {
+    width:200px;
+    /* height:180px;  */
+    object-fit:cover;
+    padding:20px;
+}
+/*--------------------section1-desc----------------*/
+.section1-desc, .section2-desc, .section3-desc {
+    line-height:1.6em;
+    cursor: auto;
+}
+/*-----------------------section1-desc h4-------------------*/
+.section1-desc h4, .section2-desc h4, .section3-desc h4 {
+    color:#899099;
+    font-size: 1.4em;
+}
+/*-----------------------section1-desc h5-------------------*/
+.section1-desc h5, .section2-desc h5, .section3-desc h5 {
+    color:#a9a2a0;
+    font-size:0.9em;
+    font-weight:600;
+}
+.star-rating {
+    color:#FF0000;
+    font-size:0.8em;
+}
+.star-rating>.number {
+    color:black;
+}
+.section1-category>p, .section2-category>p, .section3-category>p {
+    color:#d1c8c3;
+    font-size:0.87em;
+    max-width:270px;
+}
+.section1-category i, .section2-category i, .section3-category i {
+    color:#5957ec;
+    font-size:0.6em;
+    padding-left:2px;
+    padding-right:2px;
+}
+.section1-price, .section2-price, .section3-price{
+    border-left: 1px solid #c2c2c2a3;
+    line-height:1.3em;
+    
+    
+}
+.section1-price sub, .section2-price sub, .section3-price sub {
+    text-decoration: line-through;
+    color: #cf9793;
+}
+.section1-price p, .section2-price p, .section3-price p {
+    color:#7baf81;
+    font-size:1em;
+    font-weight:bold;
+}
+.section1-price sub, .section2-price sub, .section3-price sub
+{
+    font-size: 0.7em;
+}
+.line-gap{
+    padding-left: 10px;
+}
+.section1-btn, .section2-btn, .section3-btn {
+    display:flex;
+    flex-direction: column;
+    /* padding-left: 0px; */
+}
+.details-btn, .addwishlist-btn {
+    padding:5px  10px;
+    border-radius:3px;
+    font-size:0.9em;
+    cursor:pointer;
+    border:1px solid #007aff;
+}
+.details-btn {
+    background-color:#007aff ;
+    color: #ffffff;
+    margin-top:20px;
+}
+.addwishlist-btn {
+    margin: 6px 0px;
+    color:#007aff;
+}
+
