@@ -87,7 +87,7 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -116,7 +116,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #000;
-    font-family: 'PT Sans', Helvetica, Arial, Lucida, sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 a {
@@ -169,12 +169,16 @@ img {
     margin-top: 10px;
     align-items: center;
 }
-.fa-rectangle-xmark{
+
+.fa-rectangle-xmark {
+    display: none;
     color: rgb(41, 41, 41);
 }
-#nav-bar{
+
+#nav-bar {
     color: rgb(41, 41, 41);
 }
+
 .nav-menu ul li i {
     margin: 0px 10px;
 }
@@ -188,7 +192,6 @@ img {
 .nav-menu ul li {
     font-size: 17px;
     font-weight: lighter;
-
 }
 
 .nav-menu ul li .li-name {
@@ -200,6 +203,10 @@ img {
     padding: 15px;
     font-size: 17px;
     font-weight: bold;
+}
+.nav-menu ul li a:hover{
+    color: rgb(253, 10, 10);
+
 }
 
 .icon {
@@ -745,6 +752,7 @@ input::placeholder {
 
 @media screen and (max-width:900px) {
     #nav-bar {
+        display: block;
         color: rgb(255, 255, 255);
     }
 
@@ -756,6 +764,7 @@ input::placeholder {
     }
 
     .fa-rectangle-xmark {
+        display: block;
         color: rgb(255, 255, 255);
         padding: 10px 20px;
         transform: translateX(-30px);
@@ -784,7 +793,6 @@ input::placeholder {
 
     .nav-menu ul li .li-name {
         color: aliceblue;
-
     }
 
     ul.list li {
@@ -802,7 +810,6 @@ input::placeholder {
         margin-left: 30px;
         text-align: center;
         margin-top: 20px;
-
     }
 
     .btn-model {
@@ -817,7 +824,6 @@ input::placeholder {
     .double-content {
         display: flex;
         flex-direction: column;
-
     }
 
     .laptop-image {
@@ -827,15 +833,14 @@ input::placeholder {
 
     .left h1 {
         text-align: center;
-        font-size:25px;
-        width: 400px;
-        margin-left: 20px;
+        font-size: 25px;
+        width: 450px;
+        margin-left: 40px;
     }
 
     .left h2 {
-        margin-left: 30px;
-        width: 400px;
-
+        margin-left: 40px;
+        width: 450px;
     }
 
     .left p {
@@ -847,7 +852,6 @@ input::placeholder {
 
     .right-button {
         transform: translateX(150px);
-
     }
 
     .fourth-content1 {
@@ -867,13 +871,22 @@ input::placeholder {
     .footer-content {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-name h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .footer-name p {
+        font-size: 20px;
+        text-align: center;
     }
 
     .input-value {
         width: 50px;
     }
-
-
 
 
 }
