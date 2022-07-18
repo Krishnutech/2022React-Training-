@@ -1,0 +1,807 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'PT Sans',Helvetica,Arial,Lucida,sans-serif;
+
+}
+/* headersection */
+header{
+    background-color:rgba(0,0,0,0.62);
+}
+.background{
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%),url(https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/Home-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.container{
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  padding:10px ;  
+}
+ /* Logo section */
+.logo img{
+  width: 169px;
+}
+.burgur{
+  display: none;
+}
+/* Navbar section  */
+.navbar a{
+   color:#ffffff;
+   display: inline-block;
+   font-size: 20px;
+   padding-right: 22px;
+   text-decoration: none;
+}
+
+/* description section */
+.text h1{
+    font-size: 70px;
+    text-align: center;
+    color: #ffffff;
+    max-width:400px;
+    margin:100px  auto 30px;
+    font-weight: 500;
+}
+.text-inner p{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'PT Sans',Helvetica,Arial,Lucida,sans-serif;
+    line-height: 2;
+    max-width:450px;
+    margin:0  auto 20px;
+}
+.inner-content p{
+    line-height: 2;
+    padding: 20px 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ a.active{
+    color:#ed4037;
+}
+.description-btn{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.desc-btn{
+    color:#ffffff;
+    border: none;
+    background-color: #ed4037;
+    padding: 15px 15px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 30%)
+}
+.desc-btn:hover{
+    background-color: #FF0000;
+}
+/* helping section */
+.section h4{
+    padding-bottom: 50px;
+    font-weight: 300;
+    text-align: center;  
+    font-size: 51px;
+    padding-top: 50px;
+    margin: auto;
+    font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;
+}
+.helping-section-column img{
+    width: 310px;
+    height: 200px;
+}
+.helping-section-row{
+    display: flex;
+    justify-content: center;
+}
+.helping-section-column{
+    padding-right:40px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.helping-section-column h3{
+    font-size: 36px;
+    font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    padding-top: 20px;
+}
+.helping-section-column h5{
+    font-size: 22px;
+    padding-top: 10px;
+    font-style: italic;
+    color: #ef4137;
+    font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;
+}
+.helping-section-column p{
+    max-width: 310px;
+    text-align: justify;
+    line-height: 2;
+    padding: 20px 0;
+    
+}
+.hepling-section-btn-2{
+    color: #ffffff;
+    border:none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ef4137;
+    padding: 10px 20px;  
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+}
+.hepling-section-btn-2:hover{
+    background-color: #FF0000;
+}
+/*rating section */
+.rating{
+    background-image:linear-gradient(180deg,rgba(63,61,106,0.9) 0%,rgba(63,61,106,0.9) 100%),url(https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/Home-header.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+}
+.rating-section {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.rating-section-desc h3{
+    max-width:160px;
+    padding-bottom: 30px;
+    font-size: 37px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.rating-section-desc-rating p{
+    color:#ffffff;
+    font-size: 80px;
+    font-weight: bolder;
+    padding-top: 30px;
+    text-align: center;
+}
+.rating-section-desc-rating h4{
+    color: #ffffff;
+    font-size: 20px;
+}
+.rating-section-btn{
+    color: #ffffff;
+    border:none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ef4137;
+    padding: 10px 20px;
+}
+.rating-section-btn:hover{
+    background-color: #FF0000;
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+}
+/* service section */
+.service{
+    background-image: linear-gradient(123deg,#f9f9f9 27%,#ffffff 27%);
+}
+.service-section{
+    display:flex;
+    padding: 50px; 
+    justify-content: space-evenly;
+    margin:auto;
+}
+.service-section-desc img{
+    width:300px;
+}
+.service-section-inner-content h3{
+    font-size: 50px;
+    max-width: 450px;
+}
+.service-section-inner-content h4{
+    color:#FF0000;
+    font-size: 24px;
+    padding:20px 0;
+}
+.service-section-inner-content p{
+    max-width: 450px;
+    line-height:2 ;
+}
+.service-section-btn{
+    padding:40px 0;
+}
+.service-section-desc-btn{
+    color: #ffffff;
+    border:none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ef4137;
+    padding: 20px 20px;
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+}
+.service-section-desc-btn:hover{
+background-color: #FF0000;
+}
+/* choosing section */
+.choosing{
+    background-image: linear-gradient(180deg,rgba(249,249,249,0.95) 0%,rgba(249,249,249,0.95) 100%),url(https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/webdesign-concept.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.choosing-section{
+    justify-content: space-evenly;
+    margin: auto;
+    max-width:70% ;
+}
+.choosing-section h5{
+    font-size: 51px;
+    text-align: center;
+    padding-top:70px;
+    padding-bottom:40px;
+}
+.overall-choosing{
+    display: flex;
+}
+.choosing-container{
+    max-width:200px;
+    margin: auto;
+    text-align:center;
+    font-size:17px;
+    font-weight:bold;
+    line-height:1.2em;
+    padding-top:10px;
+    padding-bottom:30px;  
+}
+/* details section */
+.details{
+    background-image: linear-gradient(135deg,rgba(63,61,106,0.95) 0%,rgba(63,61,106,0.95) 100%),url(https://weblyfree.markhendriksen.com/wp-content/uploads/2018/06/team-big.jpg);
+ }
+.details-section h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 30px 30px 0px;
+    text-align: center;
+}
+.details-section p{
+    color:#ef4137;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px 10px 50px;
+    text-align: center;
+}
+.form-section{
+    padding: 20px;
+    padding-top:10px;
+    padding-bottom: 50px;
+}   
+.form-section-1{
+    display: flex;
+    justify-content: space-evenly; 
+    padding-bottom: 30px;
+}
+.form-section-2{
+   padding-left: 350px;
+   width: 96%;
+   padding-bottom: 30px;
+}
+.form-section-2 input[type=text]{
+    width: 70%;
+}
+input[type=text]{
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background:none;
+    padding-bottom:40px;
+}
+.total-content{
+    color: #ffffff;
+    padding-top: 50px;
+    padding-left: 50%;
+}
+.total-text {
+    display:flex;
+}
+.total-inner-content input[type=text] {
+    width:80%;
+}
+.total-btn{
+ padding-top: 35px;
+}
+.total-btn .total-submit-btn{
+    color: #ffffff;
+    border:none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ef4137;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+/* footer section */
+footer{
+    background-color: #3f3d6a;
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:60px 0; 
+    padding-right: 50px;
+    color:#ffffff;
+    max-width: 67%;
+    margin: auto;
+
+}
+.footer-content a{
+    display: block;
+    color: #ffffff;
+    padding:8px;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-content-3 p{
+    line-height: 2;
+    margin:auto;
+}
+.footer-content h2{
+    font-size: 23px;
+} 
+/* footer bottom section */
+.footer-bottom{
+    background-color:#2b2948;
+    padding:30px;
+    color: #ffffff;
+}
+.footer-bottom-1 p{
+    font-size: 20px;
+    max-width: 50%;
+    text-align: center;
+}
+@media(max-width:1024px) {
+  /* logo section */
+  .logo img{
+  width:200px;
+   padding: 0 10px;
+    }
+  /* description section */
+    .text h1{
+    max-width:400px;
+    font-size: 60px;
+   }
+   .text-inner p{
+     max-width: 400px;
+     margin-top: 70px;
+   }
+   .desc-btn{
+     font-size: 20px;
+   }
+   /* helping section */
+   .section h4{
+     padding: 30px 0;
+     font-size: 50px;
+   }
+   .helping-section-row{
+      padding:0 8%;
+   } 
+   .helping-section-column img{
+    width:255px;
+   }
+   .helping-section-column h3{
+    font-size: 30px;
+   }
+   .helping-section-column h5{
+    font-size: 20px;
+   }
+   .helping-section-column p{
+    font-size: 15px;
+   }
+   /*rating section */
+   .rating-section-desc-rating{
+     padding: 30px 10px;
+   }
+   .rating-section-desc h3{
+     font-size: 30px;
+     max-width: 150px;
+     margin: auto;
+   }
+   .rating-section-desc-rating p {
+    font-size: 60px;
+    padding-top: 50px;
+}
+/* service section */
+  .service-section-desc img{
+    padding: 10px 20px;
+  }
+  .service-section-inner-content h3{
+    font-size: 35px;
+    padding: 10px 50px;
+  }
+  .service-section-inner-content h4{
+    padding: 10px 50px;
+    font-size: 20px;
+  }
+  .service-section-inner-content p{
+    padding: 10px 50px;
+    font-size: 15px;
+  }
+  .service-section-btn{
+    text-align:left;
+    padding: 10px 50px;
+  }
+  .service-section-desc-btn{
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  /* choosing section */
+  .choosing-section h5{
+    font-size: 40px;
+  }
+  .choosing-container {
+    font-size: 15px;
+    padding:20px 10px;
+  }
+  .details-section h1{
+    font-size: 40px;
+    padding:20px 10px;
+  }
+  .details-section p{
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .form-section-2{
+    padding-left: 20px;  
+ }
+ .form-section-1{
+    padding-left: 30px;
+ }
+ .total-content label{
+    padding-left: 10px;
+}
+.form-section-2{
+  padding-left: 230px;
+  width:100%;
+}
+.total-btn{
+  padding-top: 40px;
+  padding-left: 5px;
+}
+/* footer section */
+  .footer{
+    padding: 30px 30px;
+    margin: auto;
+  }
+  .footer-content{
+    padding-left: 10px;
+  }
+  .footer-content {
+    padding:0px;
+  }
+  .footer-content-3{
+   padding-top:10px;
+  }
+  /* footer bottom section */
+  .footer-bottom p{
+    font-size: 20px;
+  }  
+}
+@media(max-width:768px) {
+  /* logo section */
+    .logo img{
+    width:200px;
+    padding: 0 40px;
+    }
+    .responsive{
+      width:200px;
+      height: 70vh;
+      right:30px;
+      position: absolute;
+      top:21%;
+      background-color:#CFD8DC;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 5px;
+    }
+    .burgur 
+    {
+      display:block;
+    }
+    .responsive a{
+      text-decoration: none;
+    }
+    .navbar{
+      display: none;
+    }
+
+  /* description section */
+    .text h1{
+    max-width:260px;
+    font-size: 50px;
+   }
+   .text-inner p{
+     max-width: 300px;
+     margin-top: 20px;
+   }
+   .desc-btn{
+     font-size: 15px;
+   }
+   /* helping section */
+   .section h4{
+     padding: 30px 0;
+     font-size: 40px;
+   }
+   .helping-section-row{
+     flex-flow: wrap;
+     padding-right:20px;
+     padding-left: 40px;
+     /* text-align: center; */
+   }
+   .helping-section-column{
+      text-align: center ;
+   }
+   .helping-section-column p{
+    font-size: 14px;
+    max-width: 280px;
+    text-align: center;
+   }
+   /*rating section */
+   .rating-section{
+    flex-flow: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .rating-section-desc-rating{
+     padding: 10px 60px;
+   }
+   .rating-section-desc h3{
+     font-size: 30px;
+     max-width: 150px;
+     margin: auto;
+     text-align: center;
+   }
+   .rating-section-desc-rating p {
+    font-size: 60px;
+    padding-top: 20px;
+   }
+   /* service section */
+  .service-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  .service-section-desc img{
+    padding: 10px 20px;
+  }
+  .service-section-inner-content h3{
+    font-size: 30px;
+    padding: 20px 50px;
+  }
+  .service-section-inner-content h4{
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .service-section-inner-content p{
+    padding: 10px 50px;
+    margin: auto;
+  }
+  .service-section-btn{
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .service-section-desc-btn{
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  /* choosing section */
+  .choosing-section h5{
+    font-size: 30px;
+  }
+  .overall-choosing{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  /* details section */
+  .details-section h1{
+    font-size: 40px;
+    padding:20px 20px;
+  }
+  .details-section p{
+    font-size: 20px;
+    padding-bottom: 20px;
+  }   
+ .total-content label{
+    padding-left: 0px;
+}
+.form-section-1{
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+    padding: 10px 20px;
+}
+.form-section-2{
+    margin: auto;
+    padding: 10px 80px;
+    width: 100%;
+}
+.total-btn{
+    padding-top: 40px;
+    padding-left: 5px;
+}
+/* footer section */
+  .footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px 10px;
+  }
+  .footer-content{
+    padding: 20px 30px;
+    margin: auto;
+  }
+  .footer-content-3{
+  padding: 20px 20px;
+  text-align: center;
+  }
+  /* footer bottom section */
+  .footer-bottom p{
+    font-size: 20px;
+    margin: auto;
+    text-align: left;
+    padding: 10px 20px;
+  }
+  
+}
+/* 480------------------------------------------------------------------------------------------- */
+@media(max-width:480px) {
+  /* logo section */
+    .logo img{
+    width:200px;
+    padding: 0 50px;
+    }
+    .responsive{
+      width:130px;
+      right:10px;
+      position: absolute;
+      top:21%;
+      background-color:#CFD8DC;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .responsive a{
+      text-decoration: none;
+    }
+    .burgur 
+    {
+      display:block;
+    }
+    .navbar{
+      display: none;
+    }
+  /* description section */
+    .text h1{
+    max-width:200px;
+    font-size: 40px;
+   }
+   .text-inner p{
+     max-width: 300px;
+     margin-top: 20px;
+   }
+   .desc-btn{
+     font-size: 15px;
+   }
+   /* helping section */
+   .section h4{
+     padding: 30px 0;
+     font-size: 30px;
+   }
+   .helping-section-row{
+     flex-flow: wrap;
+   }
+   .helping-section-column{
+    padding-right: 0;
+    text-align: center;
+   }
+   /*rating section */
+   .rating-section{
+    flex-flow: wrap;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .rating-section-desc-rating{
+     padding: 10px 20px;
+   }
+   .rating-section-desc h3{
+     font-size: 30px;
+     max-width: 150px;
+     margin: auto;
+     text-align: center;
+   }
+   /* service section */
+  .service-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  .service-section-desc img{
+    padding: 10px 20px;
+  }
+  .service-section-inner-content h3{
+    font-size: 30px;
+    padding: 20px 50px;
+  }
+  .service-section-inner-content h4{
+    padding: 10px 50px;
+    font-size: 20px;
+  }
+  .service-section-inner-content p{
+    padding: 10px 50px;
+  }
+  .service-section-btn{
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .service-section-desc-btn{
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  /* choosing section */
+  .choosing-section h5{
+    font-size: 30px;
+  }
+  .overall-choosing{
+    display: flex;
+    flex-direction: column;
+  }
+  /* details section */
+  .details-section h1{
+    font-size: 40px;
+    padding:20px 20px;
+  }
+  .details-section p{
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .form-section-1{
+    flex-direction: column;
+}
+.form-section-2{
+    padding-left: 0;
+    width: 700px;
+}
+ .total-content label{ 
+  padding-right:50px ;
+}
+.total-submit-btn {
+margin-right: 200px;
+}
+/* footer section */
+  .footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 40px;
+  }
+  .footer-content{
+    padding: 20px 30px;
+  }
+  .footer-content-3{
+    padding: 20px 40px;
+  }
+  /* footer bottom section */
+  .footer-bottom{
+    max-width: 100%;
+  }
+  .footer-bottom p{
+    font-size: 10px;
+    margin: auto;
+    font-weight: bolder;
+  } 
+}
